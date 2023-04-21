@@ -1,0 +1,27 @@
+.title{
+    margin: 5% 0 10% 5%;
+    color: #083c64;
+    font-size: 5vw;
+}
+
+.Btnpedido{
+    font-size: 20px !important;
+    width: 75% !important;
+    padding: 0.5em 2em;
+    background: #083c64;
+    color: white;
+    border-radius: 15px !important;
+    font-size: 4vw;
+}
+
+#total{
+    margin: 0;
+    padding: 0;
+}
+
+.areaPago{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 3%;
+}

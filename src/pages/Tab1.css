@@ -1,0 +1,44 @@
+#texto-suscribete{
+   color: #083c64;
+   font-size: 5vw;
+}
+
+.banner{
+    width: 100%;
+}
+
+/* imagen con fondo */
+.block-img{
+    height: auto;
+}
+
+.img-btn{
+    width: 100%;
+}
+
+.NS{
+    background-color: #083c64 ;
+    color: white;
+    padding: 25px 0 25px 0;
+    width: 100%;
+}
+
+.NS-img div img{
+    width: 100%;
+    margin: 3% 0 0 0;
+}
+
+
+
+.atajos ion-row{
+    justify-content: center;
+}
+
+
+.atajos ion-row p{
+    margin: 10px 0 10px 0 !important;
+    background-color: white;
+    color: #083c64;
+    font-family: Boing;
+    font-size: 21px !important;
+}

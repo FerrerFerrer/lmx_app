@@ -1,0 +1,13 @@
+/* style={{ width: '100%', padding: '0'}} */
+
+.searchbarTop{
+    width: 100%;
+}
+
+.sc-ion-searchbar-md{
+    padding-right: 0px !important;
+}
+
+.barra{
+    background-color:#083c64;
+}

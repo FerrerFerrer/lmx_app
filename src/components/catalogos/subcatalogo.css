@@ -1,0 +1,70 @@
+  /* Tamaño de los contenedores de imagenes  */
+  .cClass {
+    width: 100%;
+    color: #083c64;
+    /* height: 600px; */
+    /* margin: 0 auto; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5% 0 5% 0;
+}
+
+.gClass {
+    width: 100%;
+    color: #083c64;
+    /* height: 600px; */
+    /* margin: 0 auto; */
+    text-align: center;
+    display: grid;
+
+}
+
+.productosName {
+    font-size: 95%;
+}
+
+.op {
+    padding: 0 5%;
+    margin: 0 5% !important;
+    color: white;
+    font-size: 15px !important;
+    background-color: #083c64;
+    border-radius: 10px;
+}
+
+.contador {
+    color: grey;
+    margin: 0;
+}
+
+
+.op2 {
+    padding: 1px 4%;
+    margin: 0 5% !important;
+    color: white;
+    font-size: 15px !important;
+    background-color: #083c64;
+    border-radius: 10px;
+}
+
+/* tamaño de los productos */
+/* chico */
+.c {
+    width: 60%;
+    height: 8rem;
+}
+
+.g {
+    width: 100%;
+}
+
+.producto {
+    margin: 5% 0;
+}
+
+.opciones2 {
+    bottom: 10% !important;
+    width: 100%;
+    margin: 10% 0 10% 0;
+}

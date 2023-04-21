@@ -1,0 +1,59 @@
+.login {
+    color: #083c64;
+}
+
+h1{
+    font-size: 6vw;
+    color: #083c64;
+}
+#usuario{
+    width: 20vw;
+    margin: 2% 0 3% 0;
+}
+
+.formulario {
+    text-align: center;
+    margin: 25% 0 25% 0;
+    /* display: grid;*/
+} 
+
+.campos{
+    color: #083c64 ;
+    width: 65%;
+    margin: 0 0 4% 18%;
+    text-align: left;
+}
+
+.options{
+    margin: 5%;
+}
+
+.label{
+    margin: 0 0 0 5%;
+}
+
+.input{
+    color: #083c64;
+    border-style: solid;
+    border-radius: 17px;
+}
+
+#iniciarSesion{
+    font-size: 17px !important;
+    width: 55% !important;
+    padding: 0.5em 2em;
+    background: #083c64;
+    color: white;
+    border-radius: 15px !important;
+    font-size: 4vw;
+}
+
+.recuperarBtn{
+    font-size: 17px !important;
+    width: 65% !important;
+    padding: 0.5em 2em;
+    background: #083c64;
+    color: white;
+    border-radius: 15px !important;
+    font-size: 4vw;
+}

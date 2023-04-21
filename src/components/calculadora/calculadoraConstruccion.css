@@ -1,0 +1,149 @@
+.calculadora-option{
+    text-align: center;
+   
+}
+
+.tituloIndexC , h3{
+ color: #24446c;
+ text-align: center;
+ margin: 10% 5%;
+}
+
+/* Calculadora de letrimex */
+.cuerpo{
+    user-select: none;
+	margin: 0;
+}
+
+/* CONTENEDOR SLIDER */
+.slide-contenedor {
+	text-align: center;
+}
+
+.slider-range .trabNum{
+	display: block;
+	margin-left: 25em;
+	margin-bottom: 8px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #24446c;
+}
+
+.slider-range h2{
+    color: #24446c;
+    margin: 10% 10%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 10px !important;
+    border: 2px solid #24446c;
+    outline: none;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background: transparent;
+    background-image: url("https://letrimex.com.mx/wp-content/uploads/2021/12/PNG-C.png") !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background: transparent;
+    background-image: url("https://letrimex.com.mx/wp-content/uploads/2021/12/PNG-C.png") !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* CHECKBOX */
+.jornada-contenedor{
+	display: flex;
+    justify-content: center;
+}
+
+.check-container {
+    font-family: 'Montserrat', sans-serif;
+    color: #24446c;
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    padding-left: 30px;
+	/*margin-left: 30px;*/
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 3px solid #24446c;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.check-container input:checked ~ .checkmark {
+    background-color: #51b500;
+}
+ 
+
+.check-container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* BOTÓN CALCULAR */
+.btnBaños{
+	/* margin-right: 460px; */
+	border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background: #24446c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.divBaños{
+    display: flex;
+    justify-content: center;
+}

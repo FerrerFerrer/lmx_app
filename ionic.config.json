@@ -1,0 +1,7 @@
+{
+  "name": "lmx",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
