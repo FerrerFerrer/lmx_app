@@ -1,0 +1,31 @@
+.titulo{
+    color: #083c64;
+    text-align: center;
+    margin: 20px 5px 0px 5px !important;
+}
+
+.subtitulo{
+    color: #083c64;
+    text-align: center;
+    margin: 0px;
+}
+
+.nohay{
+    color: #899095;
+    text-align: center;
+    margin: 50px 5px;
+}
+
+.columns{
+    font-size:10px;
+    color:#083c64;
+    text-align:center
+}
+
+.subtitulomalo{
+    color: #bf0000;
+    text-align: center;
+    margin: 0px 0px 100px 0px;
+    font-size: 20px;
+
+}

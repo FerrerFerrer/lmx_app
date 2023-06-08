@@ -5,7 +5,9 @@ import { NavLink, useParams } from "react-router-dom";
 import './resultado.css';
 
 const Resultado: React.FC = () => {
-    const {calculo} = useParams();
+    let calculo = useParams();
+    calculo = JSON.parse(JSON.stringify(calculo)).calculo;
+
     return (
         <div>
             <IonPage>
@@ -18,7 +20,7 @@ const Resultado: React.FC = () => {
                     <div className="body-resultado-calculadora">
                         <div>
                             <h2>PARA LOS DATOS INGRESADOS SE RECOMIENDA UNA CANTIDAD DE:</h2>
-                            <p>{calculo}</p>
+                            <p>{calculo.toString()}</p>    
                             <p>Baños</p>
                         </div>
                         <div>

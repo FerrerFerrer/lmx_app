@@ -6,13 +6,14 @@ import { Route } from "react-router";
 import { NavLink } from "react-router-dom";
 
 var output = document.getElementById('demo1');
-let baños = 1;
+let baños = 10;
 const CalculadoraConstruccion: React.FC = () => {
     const bañosSugeridos = 0;
     const [trabajadores, ntrabajadores] = useState(0);
 
     const changeTrabajadores = (event) => {
         ntrabajadores(event.target.value);
+        calcularBañosConstruccion();
     };
 
     const calcularBañosConstruccion = () => {
@@ -66,7 +67,7 @@ const CalculadoraConstruccion: React.FC = () => {
                                 </label>
                             </div>
                             <div className="divBaños">
-                                <NavLink to={"/resultadoCalculadora/" +{bañosSugeridos}} >
+                                <NavLink to={`/resultadoCalculadora/${baños}`} >
                                     <button className="btnBaños"> Calcular</button>
                                 </NavLink>
                             </div>

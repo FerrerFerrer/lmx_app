@@ -42,3 +42,13 @@
     font-family: Boing;
     font-size: 21px !important;
 }
+
+.vecsup{
+    position: absolute;
+
+}
+
+.vecinf{
+    position: absolute;
+    bottom:-10px;
+}

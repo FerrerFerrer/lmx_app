@@ -1,5 +1,5 @@
 import { IonCol, IonIcon, IonRow, IonSearchbar, IonTitle, IonToolbar } from "@ionic/react";
-import { arrowBack } from 'ionicons/icons';
+import { chevronBack } from 'ionicons/icons';
 
 // img
 // import App, { newToolbar } from "../../App";
@@ -17,12 +17,12 @@ const TopBarBlue: React.FC = () => {
                 <IonCol size="1">
                     {/* <NavLink to={ruta} onClick={() => { RouterBack() }}> */}
                     <button style={{backgroundColor: '#083c64'}} onClick={history.goBack}>
-                        <IonIcon style={{ color: "white" }} size='large' icon={arrowBack} ></IonIcon>
+                        <IonIcon style={{ color: "white" }} size='large' icon={chevronBack} ></IonIcon>
                     </button>
                     {/* </NavLink> */}
                 </IonCol>
                 <IonCol size="5">
-                    <IonTitle>
+                    <IonTitle className="padding1">
                         <img style={{ objectFit: 'contain', width: '5rem' }} src={logo_superior_blanco} alt="logo"
                             id="logo_superior" />
                     </IonTitle>

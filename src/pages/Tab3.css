@@ -1,7 +1,17 @@
 .title{
-    margin: 5% 0 10% 5%;
+    margin: 5% 0 5% 5%;
     color: #083c64;
+    font-size: 6vw;
+}
+
+.title2{
+    margin: 15% 0 10% 0%;
+    color: #9f9f9f;
     font-size: 5vw;
+}
+
+.esconder{
+    display: none;
 }
 
 .Btnpedido{
@@ -14,6 +24,36 @@
     font-size: 4vw;
 }
 
+.Btnreload{
+    font-size: 15px !important;
+    width: 60% !important;
+    padding: 0.5em 2em;
+    background: #218de1;
+    color: white;
+    border-radius: 15px !important;
+    font-size: 4vw;
+    margin:5px;
+}
+
+.lista{
+    text-align:left;
+    padding:5px;
+    padding-left:10px;
+    color: #083c64;
+    font-size: 4.5vw;
+    border-radius: 10px;
+    border-color: #083c64;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.adentro{
+    color: #8e969c;
+    font-size: 4vw;
+
+}
+
+
 #total{
     margin: 0;
     padding: 0;
@@ -22,6 +62,33 @@
 .areaPago{
     text-align: center;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     bottom: 3%;
 }
+
+.borrar{
+    /* display: flex; */
+    position: absolute;
+    right: 10px;
+    width: 6%;
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+.mtitulo{
+    color:#083c64 !important;
+}
+
+.mtitulo2{
+    color:#083c64 !important;
+    font-size:15px;
+    margin-top: 15px;
+
+}
+
+.mtexto{
+    color:#083c64 !important;
+    font-size: 9px;
+}
+

@@ -1,0 +1,16 @@
+h2{
+    color: #083c64;
+    margin: 30px;
+
+}
+
+.formulario2 {
+    text-align: center;
+    margin: 5% 0 15% 0;
+    /* display: grid;*/
+} 
+
+body{
+    position: unset !important;
+    transform: unset !important;
+}

@@ -1,7 +1,63 @@
 import { IonContent, IonHeader, IonInput, IonLabel, IonPage, IonToolbar } from '@ionic/react';
 import '../../pages/Tab2';
+import { useState } from 'react';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const Register: React.FC = () => {
+
+    const [nombre, setUser] = useState('');
+    const [pass, setPass] = useState('');
+    const [correo, setCorr] = useState('');
+    const [tel1, setTel1] = useState('');
+    const [tel2, setTel2] = useState('');
+    const [dire, setDire] = useState('');
+    const [rfc, setRfc] = useState('');
+
+    const handleUserChange = (e: any) => {setUser(e.target.value);}
+    const handlePassChange = (e: any) => {setPass(e.target.value);}
+    const handleCorrChange = (e: any) => {setCorr(e.target.value);}
+    const handleTel1Change = (e: any) => {setTel1(e.target.value);}
+    const handleTel2Change = (e: any) => {setTel2(e.target.value);}
+    const handleDireChange = (e: any) => {setDire(e.target.value);}
+    const handleRfcChange = (e: any) => {setRfc(e.target.value);}
+
+
+    const enviar = async (e) => {
+        e.preventDefault();
+
+
+        const url = `https://ventasletrimex.com.mx/letrimex_v2/public/registroapp/${nombre}/${pass}/${correo}/${tel1}/${tel2}/${dire}/${rfc}`;
+
+        const req = await fetch(url);
+
+        if (req.ok) {
+            var Swal2 = require('sweetalert2');
+
+            Swal2.fire({
+                title: 'Registro',
+                text: 'Has sido registrado con éxito',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            }).then(function () {
+                window.location.href = '/tab2';
+            });
+            return
+        }
+
+        var Swal = require('sweetalert2');
+
+        Swal.fire({
+            title: 'Registro no disponible',
+            text: 'El servicio de registro no se encuentra disponible por el momento.',
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        })
+    }
+
+    const checkRequired = () => {
+        return true;
+    }
+
     return (
         <IonPage className='login'>
             <IonContent fullscreen>
@@ -11,7 +67,7 @@ const Register: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
                 <div className='formulario'>
-                    <form>
+                    <form id="fregistro" onSubmit={enviar} >
                         <div>
                             <h1 >Bienvenid@ a</h1>
                             <h1>Letrimex</h1><br />
@@ -21,27 +77,31 @@ const Register: React.FC = () => {
                             </p><br />
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="nombre_apellido"></IonInput>
+                            <IonInput className="input" type='text' name="nombre_apellido" onIonChange={handleUserChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Nombre y apellido</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="correo"></IonInput>
+                            <IonInput className="input" type='email' name="correo" onIonChange={handleCorrChange}  required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Correo electrónico</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="telefono"></IonInput>
+                            <IonInput className="input" type='text' name="contraseña" onIonChange={handlePassChange}  required={checkRequired()}></IonInput>
+                            <IonLabel className='label'>Contraseña</IonLabel>
+                        </div>
+                        <div className='campos'>
+                            <IonInput className="input" type='tel' name="telefono" onIonChange={handleTel1Change}  required={checkRequired()} maxlength={10}></IonInput>
                             <IonLabel className='label'>Número de teléfono</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='number' name="telefono_of"></IonInput>
+                            <IonInput className="input" type='tel' name="telefono_of" onIonChange={handleTel2Change}  required={checkRequired()} maxlength={10}></IonInput>
                             <IonLabel className='label'>Tel. de oficina</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="direccion"></IonInput>
+                            <IonInput className="input" type='text' name="direccion" onIonChange={handleDireChange}  required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Dirección</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="rfc"></IonInput>
+                            <IonInput className="input" type='text' name="rfc" onIonChange={handleRfcChange}  required={checkRequired()}></IonInput>
                             <IonLabel className='label'>RFC</IonLabel>
                         </div>
                         <div>
@@ -53,5 +113,7 @@ const Register: React.FC = () => {
         </IonPage>
     );
 };
+
+
 
 export default Register;

@@ -44,11 +44,11 @@ export const construccion = [
     { id: 4, name: "Casetas", imagen: bann_casetas, tipo:"construccion", categoria:"Casetas" },
     { id: 5, name: "Contenedores", imagen: bann_contenedores, tipo:"construccion", categoria:"Contenedores" },
     { id: 6, name: "Port a cool", imagen: banner_porta, tipo:"construccion", categoria:"Port a cool" },
-    { id: 7, name: "Fosa Portátil", imagen: bann_fosa_portatil, tipo:"construccion", categoria:"Fosas portatiles" }
+    { id: 7, name: "Fosa Portátil", imagen: bann_fosa_portatil, tipo:"construccion", categoria:"Fosas portátiles" }
 ]
 
 export const servicio = [
-    { id: 1, name: "Desague de fosas sépticas", imagen: desague_roduct, tipo:"servicio", categoria:"Desague de fosas" },
+    { id: 1, name: "Desagüe de fosas sépticas", imagen: desague_roduct, tipo:"servicio", categoria:"Desagüe de fosas" },
     { id: 2, name: "Destape y mantenimiento de drenajes", imagen: destape_product, tipo:"servicio", categoria:"Destape y mantenimiento de drenajes" },
-    { id: 3, name: "Inspección de tubería con cámara", imagen: inspeccion_product, tipo:"servicio", categoria:"Inspeccion de tuberias" }
+    { id: 3, name: "Inspección de tubería con cámara", imagen: inspeccion_product, tipo:"servicio", categoria:"Inspección de tuberías" }
 ]

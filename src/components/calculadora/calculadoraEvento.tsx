@@ -31,7 +31,7 @@ const CalculadoraEvento: React.FC = () => {
                             <input value={asistentes} type="range" min={1} max={100} className="slider" id="myRange" onChange={changeAsistentes} />
                         </div>
                         <div className="horas-contenedor">
-                            <h2>HORAS</h2>
+                            <h2>Asistentes</h2>
                             <p>Día más largo</p>
                             <div>
                                 <input type="radio" name="options" id="6h" />

@@ -1,0 +1,36 @@
+.bienvenido{
+    color: #083c64;
+    margin: 12% 0 12% 0;
+}
+.quejas{
+    font-size: 17px !important;
+    width: 81% !important;
+    padding: 0.5em 2em;
+    background: #083c64;
+    color: white;
+    border-radius: 15px !important;
+    font-size: 5vw !important;
+} 
+ 
+.style-opciones{
+    color: #083c64;
+    margin: 0 0 10px 0;
+}
+
+.iconos{
+    width: 100% !important;
+    height: 1.5em;
+}
+
+/*
+.icon-inner{
+    font-size: x-large;
+}
+
+svg.ionicon{
+    height: 32px !important;
+} */
+ /* a ion-icon.iconos{
+
+    height: 1.5em;
+ } */

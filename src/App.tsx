@@ -15,13 +15,22 @@ import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
+
 import Password from './components/recoveryPassword/password';
 import Register from './components/register/register';
 import Catalogo from './components/catalogos/catalogo';
 
+import FormularioCotizar from './components/perfil/formularioCotizar';
+
 import Productos from './components/catalogos/productos';
 import Perfil from './components/perfil/perfil';
 import MisDatos from './components/perfil/misdatos/misdatos';
+import Pedidos from './components/perfil/pedidos';
+
+
+import Sucursales from './components/perfil/sucursales';
+
+
 
 import './app.css';
 
@@ -49,6 +58,7 @@ import CalculadoraEvento from './components/calculadora/calculadoraEvento';
 import CalculadoraConstruccion from './components/calculadora/calculadoraConstruccion';
 import CalculadoraIndex from './components/calculadora/calculadoraIndex';
 import Resultado from './components/calculadora/resultado';
+import { waitFor } from '@testing-library/react';
 setupIonicReact();
 
 
@@ -58,6 +68,13 @@ const App: React.FC = () => {
     localStorage.removeItem('categoria');
     console.log("borrado")
   }
+  const borrarStorageTienda = () => {
+    localStorage.removeItem('area');
+    localStorage.removeItem('categoria');
+    console.log("borrado");
+    // document.location.reload();
+
+  }
   return (
     <IonApp>
       <IonReactRouter>
@@ -65,6 +82,15 @@ const App: React.FC = () => {
           <IonRouterOutlet>
             <Route exact path="/tab1">
               <Tab1 />
+            </Route>
+            <Route path="/Sucursales">
+              <Sucursales />
+            </Route>
+            <Route path="/Pedidos">
+              <Pedidos />
+            </Route>
+            <Route path="/formularioCotizar">
+              <FormularioCotizar/>
             </Route>
             <Route path="/calculadoraIndex">
               <CalculadoraIndex />
@@ -119,7 +145,7 @@ const App: React.FC = () => {
             <IonTabButton tab="tab2" href="/tab2" onClick={() => { borrarStorage() }}>
               <IonIcon aria-hidden="true" icon={personSharp} />
             </IonTabButton>
-            <IonTabButton tab="tab3" href="/tab3" onClick={() => { borrarStorage() }}>
+            <IonTabButton tab="tab3" href="/tab3" onClick={() => { borrarStorageTienda() }}>
               <IonIcon aria-hidden="true" icon={bag} />
             </IonTabButton>
             <IonTabButton tab="tab4" href="/tab4" onClick={() => { borrarStorage() }}>

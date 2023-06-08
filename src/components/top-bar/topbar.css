@@ -2,6 +2,12 @@
 
 .searchbarTop, .searchbarTopBlue {
     width: 100%;
+    color: white !important;
+}
+
+.sc-ion-searchbar-md-h{
+    --icon-color:white;
+    --placeholder-opacity: 1;
 }
 
 .sc-ion-searchbar-md {
@@ -15,4 +21,8 @@
 .searchbarTopBlue .searchbar-input.sc-ion-searchbar-md {
     color: white;
     background-color: #083c64;
+}
+
+.padding1{
+    padding-left: 0px;
 }

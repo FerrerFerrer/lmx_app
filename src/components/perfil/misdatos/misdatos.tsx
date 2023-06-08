@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonLabel, IonInput, IonPage, IonToolbar } from "@ionic/react";
 import React from "react";
 import './misdatos.css';
+import TopBarBlue from '../../top-bar/topbarblue';
 
 import usuario_img from '../../../img/usuario.png';
 const Misdatos: React.FC = () => {
@@ -9,6 +10,7 @@ const Misdatos: React.FC = () => {
             <IonContent>
                 <IonHeader>
                     <IonToolbar>
+                        <TopBarBlue />
                     </IonToolbar>
                 </IonHeader>
                 <div className="misdatosform">
