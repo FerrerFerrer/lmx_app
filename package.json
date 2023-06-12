@@ -8,6 +8,7 @@
     "@capacitor/app": "4.1.1",
     "@capacitor/core": "4.7.0",
     "@capacitor/haptics": "4.1.0",
+    "@capacitor/ios": "^5.0.4",
     "@capacitor/keyboard": "4.1.1",
     "@capacitor/status-bar": "4.1.1",
     "@ionic/react": "^6.0.0",
@@ -31,7 +32,6 @@
     "react-native-web": "^0.19.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.0",
     "react-spring": "^9.7.1",
     "styled-components": "^5.3.11",
     "sweetalert2": "^11.7.9",
@@ -78,7 +78,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "4.7.0"
+    "@capacitor/cli": "4.7.0",
+    "react-scripts": "5.0.1"
   },
   "description": "An Ionic project"
 }
