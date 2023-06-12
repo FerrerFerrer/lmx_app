@@ -25,16 +25,16 @@ const Pedidos: React.FC = () => {
     console.log(Object.entries(pedido).length);
     return (
         <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <TopBarBlue />
+                </IonToolbar>
+            </IonHeader>
             <IonContent fullscreen>
-                <IonHeader>
-                    <IonToolbar>
-                        <TopBarBlue />
-                    </IonToolbar>
-                </IonHeader>
 
-                <h1 className="titulo">{Object.entries(pedido).length === 0  ? null : 'Mi pedido'}</h1>
-                <h3 className="nohay">{Object.entries(pedido).length === 0  ? 'Aún no hay pedidos.' : null }</h3>
-                
+                <h1 className="titulo">{Object.entries(pedido).length === 0 ? null : 'Mi pedido'}</h1>
+                <h3 className="nohay">{Object.entries(pedido).length === 0 ? 'Aún no hay pedidos.' : null}</h3>
+
 
                 {
                     pedido.map((id: any) => (
@@ -59,7 +59,7 @@ const Pedidos: React.FC = () => {
                                         <p className="columns">Cotización realizada</p>
                                     </IonCol>
                                     <IonCol>
-                                        <img src={id.status_solicitud == 7  ? imgchek : imgnocheck} alt="chek" />
+                                        <img src={id.status_solicitud == 7 ? imgchek : imgnocheck} alt="chek" />
                                         <p className="columns">Pedido realizado</p>
                                     </IonCol>
                                 </IonRow>

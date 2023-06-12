@@ -43,12 +43,12 @@ const Tab1: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent fullscreen>
         <IonHeader>
           <IonToolbar >
             <TopBar />
           </IonToolbar>
         </IonHeader>
+      <IonContent fullscreen>
         <div className='ion-text-center'>
           <p id='texto-suscribete'>Suscríbete a nuestro newsletter</p>
           {banner}

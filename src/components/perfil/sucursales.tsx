@@ -13,12 +13,12 @@ const Sucursales: React.FC = () => {
 
     return (
         <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <TopBarBlue />
+                </IonToolbar>
+            </IonHeader>
             <IonContent fullscreen>
-                <IonHeader>
-                    <IonToolbar>
-                        <TopBarBlue />
-                    </IonToolbar>
-                </IonHeader>
                 <IonGrid>
                     <IonRow>
                         <IonCol>

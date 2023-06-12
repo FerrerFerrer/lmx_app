@@ -34,6 +34,21 @@ const SubCatalogo: React.FC = () => {
         // claseImg = "productosImgServicio"
     }
     let productosSeleccionados = seleccionarImagenes(data, categoria);
+    
+    const modalopen = (ficha) =>{
+        var Swal2 = require('sweetalert2');
+        let prod = seleccionarImagenes(data, categoria);
+        
+        console.log(prod);
+
+
+        Swal2.fire({
+            title: 'Ficha técnica',
+            html: "<p class='ptext1'>" + ficha + "<p>",
+            // icon: 'success',
+            confirmButtonText: 'Aceptar'
+        })
+    }
 
     // console.log(productosSeleccionados);
     return (
@@ -50,7 +65,7 @@ const SubCatalogo: React.FC = () => {
                         {
                             productosSeleccionados.map((producto: any) => (
                                 <div className='producto' key={producto.id}>
-                                    <img className={producto.tamañoImagen} src={producto.images} alt="imagen del producto" />
+                                    <a onClick={() => modalopen(producto.ficha)}><img className={producto.tamañoImagen} src={producto.images} alt="imagen del producto" /></a>
                                     <p className='productosName'>{producto.name}</p>
                                     <p className='contador' id={producto.id}>Canitdad x{sessionStorage.getItem(producto.id) ? sessionStorage.getItem(producto.id) : 0}</p>
                                     <button className='op' onClick={() => { sumarCarrito(producto.id) }}>Añadir</button>
@@ -68,6 +83,7 @@ const SubCatalogo: React.FC = () => {
         </IonPage>
     );
 };
+
 
 const seleccionarImagenes = (data: [], categoria: string) => {
     let productosSeparados = [];

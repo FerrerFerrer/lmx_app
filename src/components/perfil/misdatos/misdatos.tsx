@@ -7,12 +7,12 @@ import usuario_img from '../../../img/usuario.png';
 const Misdatos: React.FC = () => {
     return (
         <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <TopBarBlue />
+                </IonToolbar>
+            </IonHeader>
             <IonContent>
-                <IonHeader>
-                    <IonToolbar>
-                        <TopBarBlue />
-                    </IonToolbar>
-                </IonHeader>
                 <div className="misdatosform">
                     <form>
                         <div>

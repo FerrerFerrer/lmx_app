@@ -10,7 +10,6 @@ const Tab4: React.FC = () => {
     <IonPage>
       <IonHeader >
         <IonToolbar>
-
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

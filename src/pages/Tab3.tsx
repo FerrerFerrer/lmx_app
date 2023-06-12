@@ -62,12 +62,12 @@ const Tab3: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent fullscreen>
         <IonHeader>
           <IonToolbar>
             <TopBar />
           </IonToolbar>
         </IonHeader>
+      <IonContent fullscreen>
 
         <Modal showModal={showModal} setShowModal={setShowModal} />
 

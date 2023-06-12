@@ -58,10 +58,10 @@ const Tab2: React.FC = () => {
     var Swal = require('sweetalert2');
 
     Swal.fire({
-        title: 'Credenciales incorrectas',
-        text: 'Revisa los datos ingresados.',
-        icon: 'error',
-        confirmButtonText: 'Aceptar'
+      title: 'Credenciales incorrectas',
+      text: 'Revisa los datos ingresados.',
+      icon: 'error',
+      confirmButtonText: 'Aceptar'
     })
     sessionStorage.setItem('sesion', 'false');
 
@@ -78,14 +78,14 @@ const Tab2: React.FC = () => {
 
   }
 
-  const nodisponible = () =>{
+  const nodisponible = () => {
     var Swal2 = require('sweetalert2');
 
     Swal2.fire({
-        title: 'No disponbile',
-        text: 'Este contenido no está disponible',
-        icon: 'error',
-        confirmButtonText: 'Aceptar'
+      title: 'No disponbile',
+      text: 'Este contenido no está disponible',
+      icon: 'error',
+      confirmButtonText: 'Aceptar'
     })
   }
 
@@ -93,11 +93,6 @@ const Tab2: React.FC = () => {
     return (
       <IonPage className='login'>
         <IonContent fullscreen>
-          <IonHeader >
-            <IonToolbar>
-
-            </IonToolbar>
-          </IonHeader>
           <div className='formulario'>
             <form onSubmit={validar}>
               <div >
@@ -134,7 +129,7 @@ const Tab2: React.FC = () => {
   } else {
 
     return (
-      <IonPage className='login'>
+      <IonPage>
         <IonHeader >
           <IonToolbar>
             <TopBarBlue />
@@ -198,7 +193,7 @@ const Tab2: React.FC = () => {
               <IonCol>
               </IonCol>
               <IonCol>
-                <NavLink to={{pathname: 'https://api.whatsapp.com/send?phone=528448815393'}} target="_blank">
+                <NavLink to={{ pathname: 'https://api.whatsapp.com/send?phone=528448815393' }} target="_blank">
                   <img className='imgtamaño' src={ayuda_img} alt="usuario" />
                   <h5>Ayuda</h5>
                 </NavLink>
@@ -209,7 +204,7 @@ const Tab2: React.FC = () => {
           </IonGrid>
 
           <div className='cerrar2'>
-            <NavLink to={{pathname: 'https://api.whatsapp.com/send?phone=528448815393'}} target="_blank">
+            <NavLink to={{ pathname: 'https://api.whatsapp.com/send?phone=528448815393' }} target="_blank">
               <button className='botonquejas'>Quejas y Sugerencias</button>
             </NavLink>
           </div>

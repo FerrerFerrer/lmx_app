@@ -74,45 +74,256 @@ import lujoRosa from '../img/productos/sanitarios/lujo-rosa.png';
 
 
 export const evento = [
-    { id: 1, name: "Convencional Azul", tipo: "evento", categoria: "Sanitarios", images: convencionalAzul, tamañoImagen: "c" },
-    { id: 2, name: "Convencional Rosa", tipo: "evento", categoria: "Sanitarios", images: convencionalRosa, tamañoImagen: "c" },
-    { id: 3, name: "Lujo Azul", tipo: "evento", categoria: "Sanitarios", images: lujoAzul, tamañoImagen: "c" },
-    { id: 4, name: "Lujo Rosa", tipo: "evento", categoria: "Sanitarios", images: lujoRosa, tamañoImagen: "c" },
-    { id: 5, name: "Capacidades Diferentes", tipo: "evento", categoria: "Sanitarios", images: capacidadesDiferentes, tamañoImagen: "c" },
-    { id: 6, name: "Convencional Colores", tipo: "evento", categoria: "Sanitarios", images: convencionalColores, tamañoImagen: "c" },
-    { id: 7, name: "Fuentes", tipo: "evento", categoria: "Fuentes", images: fuenteLavamanos2, tamañoImagen: "c" },
-    { id: 9, name: "Baños Mixtos", tipo: "evento", categoria: "Baños mixtos", images: productosBañosMixtos, tamañoImagen: "g" },
-    { id: 10, name: "Black Elite", tipo: "evento", categoria: "Black elite", images: blackElite, tamañoImagen: "g" },
-    { id: 11, name: "Luxuria", tipo: "evento", categoria: "Luxuria", images: luxuria, tamañoImagen: "g" },
-    { id: 12, name: "Port a Cool", tipo: "evento", categoria: "Port a cool", images: portacool, tamañoImagen: "g" },
+    { id: 1, name: "Convencional Azul", tipo: "evento", categoria: "Sanitarios", images: convencionalAzul, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.2M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Espejo <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 2, name: "Convencional Rosa", tipo: "evento", categoria: "Sanitarios", images: convencionalRosa, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.2M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Espejo <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 3, name: "Lujo Azul", tipo: "evento", categoria: "Sanitarios", images: lujoAzul, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.41M <br> Ancho: 1.3M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Dispensador de Jabón <br> - Dispensador de toalla <br> - Lavamanos <br> - Espejo <br> - Sistema Flush <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 4, name: "Lujo Rosa", tipo: "evento", categoria: "Sanitarios", images: lujoRosa, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.41M <br> Ancho: 1.3M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Dispensador de Jabón <br> - Dispensador de toalla <br> - Lavamanos <br> - Espejo <br> - Sistema Flush <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 5, name: "Capacidades Diferentes", tipo: "evento", categoria: "Sanitarios", images: capacidadesDiferentes, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.50M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Espacio para Silla de Ruedas <br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Dispensador de Jabón <br> - Dispensador de toalla <br> - Lavamanos <br> - Espejo <br> - Sistema Flush <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 6, name: "Convencional Colores", tipo: "evento", categoria: "Sanitarios", images: convencionalColores, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.2M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Espejo <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 7, name: "Fuentes", tipo: "evento", categoria: "Fuentes", images: fuenteLavamanos2, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 9, name: "Baños Mixtos", tipo: "evento", categoria: "Baños mixtos", images: productosBañosMixtos, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Largo: 8.53M <br> Ancho: 2.43M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. <br> " + 
+    "- Muro interior en papel viníl, liner papel a media altura de migitorios y exterior en cubierta de acero. <br> " + 
+    "- Piso antiderrapante. <br> - Techo interior en panel de yeso. <br> " +
+    "- Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado." + 
+    "<br> <br> <span style='color:#083c64'> Equipamiento: </span> <br> - Sanitario <br> - Mingitorio <br> - Extractor <br> - Espejo <br> - Dispensador de jabón <br>" + 
+    " - Dispensador de toallas <br> - Dispensador de papel sanitario"},
+    
+    { id: 10, name: "Black Elite", tipo: "evento", categoria: "Black elite", images: blackElite, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 11, name: "Luxuria", tipo: "evento", categoria: "Luxuria", images: luxuria, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 12, name: "Port a Cool", tipo: "evento", categoria: "Port a cool", images: portacool, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
 ]
 
 export const construccion = [
-    { id: 13, name: "Mobile Vigilancia", tipo: "construccion", categoria: "Casetas", images: casetaVigilancia, tamañoImagen: "m" },
-    { id: 14, name: "Mobile 8x20", tipo: "construccion", categoria: "Casetas", images: casetas8x20, tamañoImagen: "g" },
-    { id: 15, name: "Mobile 8x24", tipo: "construccion", categoria: "Casetas", images: casetas8x24, tamañoImagen: "g" },
-    { id: 16, name: "Mobile 8x32", tipo: "construccion", categoria: "Casetas", images: casetas8x32, tamañoImagen: "g" },
-    { id: 17, name: "Mobile 8x44", tipo: "construccion", categoria: "Casetas", images: casetas8x44, tamañoImagen: "g" },
-    { id: 18, name: "Mobile 10x48", tipo: "construccion", categoria: "Casetas", images: casetas10x48, tamañoImagen: "g" },
-    { id: 19, name: "Mobile 12x60", tipo: "construccion", categoria: "Casetas", images: casetas12x60, tamañoImagen: "g" },
-    { id: 20, name: "Fosas Portátil", tipo: "construccion", categoria: "Fosas portátiles", images: fosasPortatiles, tamañoImagen: "c" },
-    { id: 21, name: "Contenedor Portátil 8x20", tipo: "construccion", categoria: "Contenedores", images: contenedorProducto, tamañoImagen: "g" },
-    { id: 22, name: "Convencional Azul", tipo: "construccion", categoria: "Sanitarios", images: convencionalAzul, tamañoImagen: "c" },
-    { id: 23, name: "Convencional Rosa", tipo: "cosntruccion", categoria: "Sanitarios", images: convencionalRosa, tamañoImagen: "c" },
-    { id: 24, name: "Lujo Azul", tipo: "construccion", categoria: "Sanitarios", images: lujoAzul, tamañoImagen: "c" },
-    { id: 25, name: "Lujo Rosa", tipo: "construccion", categoria: "Sanitarios", images: lujoRosa, tamañoImagen: "c" },
-    { id: 26, name: "Capacidades Diferentes", tipo: "construccion", categoria: "Sanitarios", images: capacidadesDiferentes, tamañoImagen: "c" },
-    { id: 27, name: "Convencional Colores", tipo: "construccion", categoria: "Sanitarios", images: convencionalColores, tamañoImagen: "c" },
-    { id: 28, name: "Fuente Lavamanos", tipo: "construccion", categoria: "Fuentes", images: fuenteLavamanos, tamañoImagen: "c" },
-    { id: 30, name: "Baños Mixtos", tipo: "construccion", categoria: "Baños mixtos", images: productosBañosMixtos, tamañoImagen: "g" },
-    { id: 32, name: "Black Elite", tipo: "construccion", categoria: "Black elite", images: blackElite, tamañoImagen: "g" },
-    { id: 33, name: "Port a Cool", tipo: "construccion", categoria: "Port a cool", images: portacool, tamañoImagen: "c" },
+    
+    { id: 13, name: "Mobile Vigilancia", tipo: "construccion", categoria: "Casetas", images: casetaVigilancia, tamañoImagen: "m", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> 1.50M x 1.50M <br><br> <span style='color:#083c64'>Equipamiento:</span> " + 
+    "<br> (1 persona) <br> - Persianas <br> - Contactos 110v <br> - Barra " + 
+    " <br><br> <span style='color:#083c64'>Chasis:</span> <br> - Estructura de acero tipo canal. <br> - Tirón fijo de acero con sistema de nivelación mecánico " + 
+    " <br> - Un eje sencillo con rin. <br><br> <span style='color:#083c64'>Aisalmiento:</span> " + 
+    "<br> - Aisalmiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto. " +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span> " + 
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura."},
+    
+    { id: 14, name: "Mobile 8x20", tipo: "construccion", categoria: "Casetas", images: casetas8x20, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Equipamiento:</span> " +
+    "<br> (4 personas) <br> - Aire acondicionado <br> - Persianas <br> - Contactos 110v <br> - Salida de voz y datos <br> - Escritorio <br> - Gaveta <br> - Sanitario (Adicional) <br> - Lavabo (Adicional) <br> - Extractor (Adicional)" +
+    "<br><br> <span style='color:#083c64'>Chasis:</span> " +
+    "<br> - Estructura de acero tipo canal. <br> - Tirón de acero con sistema de nivelación mecánico. <br> - Un eje sencillo con rin." + 
+    "<br><br> <span style='color:#083c64'>Aislamiento:</span> " +
+    "<br> - Aislamiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto." +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span>" +
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura. <br> - Puerta interior de tambor con chapa (modelo con baño) " + 
+    "<br><br> <span style='color:#083c64'>Acabados:</span>" +
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. " + 
+    " <br> - Muro interior en papel de vinil y muro exterior con cubierta de acero con pintura horneada. <br> - Piso en loseta vinílica. " + 
+    " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
+    
+    { id: 15, name: "Mobile 8x24", tipo: "construccion", categoria: "Casetas", images: casetas8x24, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Equipamiento:</span> " +
+    "<br> (5 personas) <br> - Aire acondicionado <br> - Persianas <br> - Contactos 110v <br> - Salida de voz y datos <br> - Escritorio <br> - Gaveta <br> - Sanitario (Adicional) <br> - Lavabo (Adicional) <br> - Extractor (Adicional)" +
+    "<br><br> <span style='color:#083c64'>Chasis:</span> " +
+    "<br> - Estructura de acero tipo canal. <br> - Tirón de acero con sistema de nivelación mecánico. <br> - Un eje sencillo con rin." + 
+    "<br><br> <span style='color:#083c64'>Aislamiento:</span> " +
+    "<br> - Aislamiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto." +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span>" +
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura. <br> - Puerta interior de tambor con chapa (modelo con baño) " + 
+    "<br><br> <span style='color:#083c64'>Acabados:</span>" +
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. " + 
+    " <br> - Muro interior en papel de vinil y muro exterior con cubierta de acero con pintura horneada. <br> - Piso en loseta vinílica. " + 
+    " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
+    
+    { id: 16, name: "Mobile 8x32", tipo: "construccion", categoria: "Casetas", images: casetas8x32, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Equipamiento:</span> " +
+    "<br> (5 personas) <br> - Aire acondicionado <br> - Persianas <br> - Contactos 110v <br> - Salida de voz y datos <br> - Escritorio <br> - Gaveta <br> - Sanitario <br> - Lavabo <br> - Extractor" +
+    "<br><br> <span style='color:#083c64'>Chasis:</span> " +
+    "<br> - Estructura de acero tipo canal. <br> - Tirón de acero con sistema de nivelación mecánico. <br> - Un eje sencillo con rin." + 
+    "<br><br> <span style='color:#083c64'>Aislamiento:</span> " +
+    "<br> - Aislamiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto." +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span>" +
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura. <br> - Puerta interior de tambor con chapa. " + 
+    "<br><br> <span style='color:#083c64'>Acabados:</span>" +
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. " + 
+    " <br> - Muro interior en papel de vinil y muro exterior con cubierta de acero con pintura horneada. <br> - Piso en loseta vinílica. " + 
+    " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
+    
+    { id: 17, name: "Mobile 8x44", tipo: "construccion", categoria: "Casetas", images: casetas8x44, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Equipamiento:</span> " +
+    "<br> (7 personas) <br> - Aire acondicionado <br> - Persianas <br> - Contactos 110v <br> - Salida de voz y datos <br> - Escritorio <br> - Gaveta <br> - Sanitario <br> - Lavabo <br> - Extractor <br> - Clima central (Adicional)" +
+    "<br><br> <span style='color:#083c64'>Chasis:</span> " +
+    "<br> - Estructura de acero IPR. <br> - Tirón de acero con sistema de nivelación mecánico. <br> - Un eje sencillo con rin." + 
+    "<br><br> <span style='color:#083c64'>Aislamiento:</span> " +
+    "<br> - Aislamiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto." +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span>" +
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura. <br> - Puerta interior de tambor con chapa. " + 
+    "<br><br> <span style='color:#083c64'>Acabados:</span>" +
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. " + 
+    " <br> - Muro interior en papel de vinil y muro exterior con cubierta de acero con pintura horneada. <br> - Piso en loseta vinílica. " + 
+    " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
+    
+    { id: 18, name: "Mobile 10x48", tipo: "construccion", categoria: "Casetas", images: casetas10x48, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Equipamiento:</span> " +
+    "<br> (8 personas) <br> - Aire acondicionado <br> - Persianas <br> - Contactos 110v <br> - Salida de voz y datos <br> - Escritorio <br> - Gaveta <br> - Sanitario <br> - Lavabo <br> - Extractor <br> - Barra de café <br> - Clóset <br> - Clima central (Adicional)" +
+    "<br><br> <span style='color:#083c64'>Chasis:</span> " +
+    "<br> - Estructura de acero IPR. <br> - Tirón de acero con sistema de nivelación mecánico. <br> - Un eje sencillo con rin." + 
+    "<br><br> <span style='color:#083c64'>Aislamiento:</span> " +
+    "<br> - Aislamiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto." +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span>" +
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura. <br> - Puerta interior de tambor con chapa. " + 
+    "<br><br> <span style='color:#083c64'>Acabados:</span>" +
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. " + 
+    " <br> - Muro interior en papel de vinil y muro exterior con cubierta de acero con pintura horneada. <br> - Piso en loseta vinílica. " + 
+    " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
+    
+    { id: 19, name: "Mobile 12x60", tipo: "construccion", categoria: "Casetas", images: casetas12x60, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Equipamiento:</span> " +
+    "<br> (14 personas) <br> - Aire acondicionado <br> - Persianas <br> - Contactos 110v <br> - Salida de voz y datos <br> - Escritorio <br> - Gaveta <br> - Sanitario <br> - Lavabo <br> - Extractor <br> - Clima central (Adicional)" +
+    "<br><br> <span style='color:#083c64'>Chasis:</span> " +
+    "<br> - Estructura de acero IPR. <br> - Tirón de acero con sistema de nivelación mecánico. <br> - Un eje sencillo con rin." + 
+    "<br><br> <span style='color:#083c64'>Aislamiento:</span> " +
+    "<br> - Aislamiento térmico y acústico de fibra de vidrio en paredes y techos, acorde a la norma americana que regula este producto." +
+    "<br><br> <span style='color:#083c64'>Puertas y ventanas:</span>" +
+    "<br> - Ventanas de aluminio natural con sistema de sujeción perimetral totalmente selladas. <br> - Puerta exterior con marco perimetral de aluminio y doble cerradura. <br> - Puerta interior de tambor con chapa. " + 
+    "<br><br> <span style='color:#083c64'>Acabados:</span>" +
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. " + 
+    " <br> - Muro interior en papel de vinil y muro exterior con cubierta de acero con pintura horneada. <br> - Piso en loseta vinílica. " + 
+    " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
+    
+    { id: 20, name: "Fosas Portátil", tipo: "construccion", categoria: "Fosas portátiles", images: fosasPortatiles, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 21, name: "Contenedor Portátil 8x20", tipo: "construccion", categoria: "Contenedores", images: contenedorProducto, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Largo:</span>" +
+    "<br> -Interior 5.9 M <br> - Exterior 6.0 M" + 
+    "<br><br> <span style='color:#083c64'>Ancho:</span>" +
+    "<br> - Interior 2.34 M <br> - Exterior 2.50 M" + 
+    "<br><br> <span style='color:#083c64'>Altura:</span>" +
+    "<br> - Interior 2.40 M <br> - Exterior 2.50 M " + 
+    "<br><br> <span style='color:#083c64'>Tara:</span>" +
+    "<br> - 2,300 KG" + 
+    "<br><br> <span style='color:#083c64'>Carga Almacenable:</span>" +
+    "<br> - 26,000 KG" + 
+    "<br><br> <span style='color:#083c64'>Capacidad:</span>" + 
+    "<br> - 33.3 M3"},
+    
+    { id: 22, name: "Convencional Azul", tipo: "construccion", categoria: "Sanitarios", images: convencionalAzul, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.2M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Espejo <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 23, name: "Convencional Rosa", tipo: "cosntruccion", categoria: "Sanitarios", images: convencionalRosa, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.2M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Espejo <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 24, name: "Lujo Azul", tipo: "construccion", categoria: "Sanitarios", images: lujoAzul, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.41M <br> Ancho: 1.3M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Dispensador de Jabón <br> - Dispensador de toalla <br> - Lavamanos <br> - Espejo <br> - Sistema Flush <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 25, name: "Lujo Rosa", tipo: "construccion", categoria: "Sanitarios", images: lujoRosa, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.41M <br> Ancho: 1.3M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Dispensador de Jabón <br> - Dispensador de toalla <br> - Lavamanos <br> - Espejo <br> - Sistema Flush <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 26, name: "Capacidades Diferentes", tipo: "construccion", categoria: "Sanitarios", images: capacidadesDiferentes, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.50M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Espacio para Silla de Ruedas <br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Dispensador de Jabón <br> - Dispensador de toalla <br> - Lavamanos <br> - Espejo <br> - Sistema Flush <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 27, name: "Convencional Colores", tipo: "construccion", categoria: "Sanitarios", images: convencionalColores, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 2.31M <br> Ancho: 1.2M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Rejillas de ventilación <br> - Tubo de respiración <br> - Cerrojo: Abierto / Cerrado <br> - Espejo <br> - Depósito inodoro de captación cónico " + 
+    " <br> - Mingitorio <br> - Dispensador de papel higiénico"},
+    
+    { id: 28, name: "Fuente Lavamanos", tipo: "construccion", categoria: "Fuentes", images: fuenteLavamanos, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 1.12 M <br> Ancho: 55 CM <br> Profundo: 77 CM "+
+    " <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Capacidad: 60 L <br> - Tamaño del lavabo:<br> Ancho: 52 CM <br> Largo: 32 CM <br>" + 
+    " <br> *No requiere conexión hidráulica. <br> *Libre de mantenimiento. "},
+    
+    { id: 30, name: "Baños Mixtos", tipo: "construccion", categoria: "Baños mixtos", images: productosBañosMixtos, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Largo: 8.53M <br> Ancho: 2.43M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Madera estufada canadiense con herrajes de sujeción a extremos acorde a la norma americana que regula este producto. <br> " + 
+    "- Muro interior en papel viníl, liner papel a media altura de migitorios y exterior en cubierta de acero. <br> " + 
+    "- Piso antiderrapante. <br> - Techo interior en panel de yeso. <br> " +
+    "- Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado." + 
+    "<br> <br> <span style='color:#083c64'> Equipamiento: </span> <br> - Sanitario <br> - Mingitorio <br> - Extractor <br> - Espejo <br> - Dispensador de jabón <br>" + 
+    " - Dispensador de toallas <br> - Dispensador de papel sanitario"},
+    
+    { id: 32, name: "Black Elite", tipo: "construccion", categoria: "Black elite", images: blackElite, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 33, name: "Port a Cool", tipo: "construccion", categoria: "Port a cool", images: portacool, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
 ]
 
 export const servicio = [
-    { id: 34, name: "Desagüe de fosas sépticas", tipo: "servicio", categoria: "Desagüe de fosas", images: camionDesague, tamañoImagen: "g" },
-    { id: 35, name: "Destape y mantenimiento con Vactor", tipo: "servicio", categoria: "Destape y mantenimiento de drenajes", images: camionVactor, tamañoImagen: "g" },
-    { id: 36, name: "Destape y mantenimiento con Hidrojet", tipo: "servicio", categoria: "Destape y mantenimiento de drenajes", images: camionDestape, tamañoImagen: "g" },
-    { id: 37, name: "Inspección de tubería con camara", tipo: "servicio", categoria: "Inspección de tuberías", images: camaraInspeccion, tamañoImagen: "c" }
+    
+    { id: 34, name: "Desagüe de fosas sépticas", tipo: "servicio", categoria: "Desagüe de fosas", images: camionDesague, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 35, name: "Destape y mantenimiento con Vactor", tipo: "servicio", categoria: "Destape y mantenimiento de drenajes", images: camionVactor, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 36, name: "Destape y mantenimiento con Hidrojet", tipo: "servicio", categoria: "Destape y mantenimiento de drenajes", images: camionDestape, tamañoImagen: "g", 
+    ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
+    
+    { id: 37, name: "Inspección de tubería con camara", tipo: "servicio", categoria: "Inspección de tuberías", images: camaraInspeccion, tamañoImagen: "c", 
+    ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - <br> - <br> - <br> - <br> - " + 
+    " <br> - <br> - "},
 ]
 
