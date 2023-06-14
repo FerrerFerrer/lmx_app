@@ -34,11 +34,11 @@ const SubCatalogo: React.FC = () => {
         // claseImg = "productosImgServicio"
     }
     let productosSeleccionados = seleccionarImagenes(data, categoria);
-    
-    const modalopen = (ficha) =>{
+
+    const modalopen = (ficha) => {
         var Swal2 = require('sweetalert2');
         let prod = seleccionarImagenes(data, categoria);
-        
+
         console.log(prod);
 
 
@@ -53,12 +53,12 @@ const SubCatalogo: React.FC = () => {
     // console.log(productosSeleccionados);
     return (
         <IonPage>
-            <IonHeader >
-                <IonToolbar>
-                    <TopBarBlue />
-                </IonToolbar>
-            </IonHeader>
             <IonContent fullscreen>
+                <IonHeader >
+                    <IonToolbar>
+                        <TopBarBlue />
+                    </IonToolbar>
+                </IonHeader>
                 <h1>{categoria}</h1>
                 {
                     <div className={claseContenedorImg}>
