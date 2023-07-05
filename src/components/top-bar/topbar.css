@@ -26,3 +26,17 @@
 .padding1{
     padding-left: 0px;
 }
+
+.buscador{
+    color:#083c64;
+    border-color: #083c64 !important;
+    border-width: 2px !important;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 3px 0px;
+}
+.buscador:hover{
+    color:#08c5ff;
+    background-color: #083c64 !important;
+    font-size: 20px;
+}

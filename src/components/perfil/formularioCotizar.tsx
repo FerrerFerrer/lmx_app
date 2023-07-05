@@ -3,7 +3,6 @@ import '../../pages/Tab2';
 import React, { useState } from "react";
 import './formualrioCotizar.css';
 import TopBarBlue from '../top-bar/topbarblue';
-import { alertSharp } from 'ionicons/icons';
 // import Swal from 'sweetalert2/dist/sweetalert2.all.js'
 
 const FormularioCotizar: React.FC = () => {
@@ -16,22 +15,67 @@ const FormularioCotizar: React.FC = () => {
 
         }
     }
+
+    if (arreglo.length === 0) {
+        window.location.href = '/Tab3';
+    }
+
     console.log(arreglo);
     // return;
 
     var categ = 'Evento';
-    var equipo = arreglo[0]['id'] + ' (Evento)';
+    var equipo = '';
 
     if (arreglo[0]['id'] <= 11) {
         categ = 'Evento';
-        equipo = arreglo[0]['id'] + ' (Evento)';
-    }else if(arreglo[0]['id'] > 11 && arreglo[0]['id'] <= 20){
-        categ = 'Construccion'
-        equipo = arreglo[0]['id'] + ' (Construcción)';
-    }else{
-        categ = 'Servicio'
-        equipo = arreglo[0]['id'] + ' (Servicio)';
+
+    } else if (arreglo[0]['id'] > 11 && arreglo[0]['id'] <= 20) {
+        categ = 'Construccion';
+
+    } else {
+        categ = 'Servicio';
     }
+
+    ((sessionStorage.getItem('1') !== '0') && (sessionStorage.getItem('1') !== null)) ? equipo += "Baño Azul, " : equipo += "";
+    ((sessionStorage.getItem('2') !== '0') && (sessionStorage.getItem('2') !== null)) ? equipo += "Baño Rosa, " : equipo += "";
+    ((sessionStorage.getItem('3') !== '0') && (sessionStorage.getItem('3') !== null)) ? equipo += "Baño Azul Lujo, " : equipo += "";
+    ((sessionStorage.getItem('4') !== '0') && (sessionStorage.getItem('4') !== null)) ? equipo += "Baño Rosa Lujo, " : equipo += "";
+    ((sessionStorage.getItem('5') !== '0') && (sessionStorage.getItem('5') !== null)) ? equipo += "Baño Capacidades, " : equipo += "";
+    ((sessionStorage.getItem('6') !== '0') && (sessionStorage.getItem('6') !== null)) ? equipo += "Baño Colores, " : equipo += "";
+    ((sessionStorage.getItem('7') !== '0') && (sessionStorage.getItem('7') !== null)) ? equipo += "Lavamanos, " : equipo += "";
+    ((sessionStorage.getItem('8') !== '0') && (sessionStorage.getItem('8') !== null)) ? equipo += "" : equipo += "";
+    ((sessionStorage.getItem('9') !== '0') && (sessionStorage.getItem('9') !== null)) ? equipo += "Baños Mixtos, " : equipo += "";
+    ((sessionStorage.getItem('10') !== '0') && (sessionStorage.getItem('10') !== null)) ? equipo += "Black Elite, " : equipo += "";
+    ((sessionStorage.getItem('11') !== '0') && (sessionStorage.getItem('11') !== null)) ? equipo += "Luxuria, " : equipo += "";
+
+    ((sessionStorage.getItem('12') !== '0') && (sessionStorage.getItem('12') !== null)) ? equipo += "" : equipo += "";
+    ((sessionStorage.getItem('13') !== '0') && (sessionStorage.getItem('13') !== null)) ? equipo += "Caseta Vigilancia, " : equipo += "";
+    ((sessionStorage.getItem('14') !== '0') && (sessionStorage.getItem('14') !== null)) ? equipo += "Caseta 8x20, " : equipo += "";
+    ((sessionStorage.getItem('15') !== '0') && (sessionStorage.getItem('15') !== null)) ? equipo += "Caseta 8x24, " : equipo += "";
+    ((sessionStorage.getItem('16') !== '0') && (sessionStorage.getItem('16') !== null)) ? equipo += "Caseta 8x32, " : equipo += "";
+    ((sessionStorage.getItem('17') !== '0') && (sessionStorage.getItem('17') !== null)) ? equipo += "Caseta 8x44, " : equipo += "";
+    ((sessionStorage.getItem('18') !== '0') && (sessionStorage.getItem('18') !== null)) ? equipo += "Caseta 10x48, " : equipo += "";
+    ((sessionStorage.getItem('19') !== '0') && (sessionStorage.getItem('19') !== null)) ? equipo += "Caseta 12x60, " : equipo += "";
+    ((sessionStorage.getItem('20') !== '0') && (sessionStorage.getItem('20') !== null)) ? equipo += "Fosa Portátil, " : equipo += "";
+    ((sessionStorage.getItem('21') !== '0') && (sessionStorage.getItem('21') !== null)) ? equipo += "Contenedor 8x20, " : equipo += "";
+    ((sessionStorage.getItem('22') !== '0') && (sessionStorage.getItem('22') !== null)) ? equipo += "Baño Azul, " : equipo += "";
+    ((sessionStorage.getItem('23') !== '0') && (sessionStorage.getItem('23') !== null)) ? equipo += "Baño Rosa,, " : equipo += "";
+    ((sessionStorage.getItem('24') !== '0') && (sessionStorage.getItem('24') !== null)) ? equipo += "Baño Azul Lujo, " : equipo += "";
+    ((sessionStorage.getItem('25') !== '0') && (sessionStorage.getItem('25') !== null)) ? equipo += "Baño Rosa Lujo, " : equipo += "";
+    ((sessionStorage.getItem('26') !== '0') && (sessionStorage.getItem('26') !== null)) ? equipo += "Capacidades Dif, " : equipo += "";
+    ((sessionStorage.getItem('27') !== '0') && (sessionStorage.getItem('27') !== null)) ? equipo += "Baño Colores, " : equipo += "";
+    ((sessionStorage.getItem('28') !== '0') && (sessionStorage.getItem('28') !== null)) ? equipo += "Lavamanos, " : equipo += "";
+    ((sessionStorage.getItem('29') !== '0') && (sessionStorage.getItem('29') !== null)) ? equipo += "" : equipo += "";
+    ((sessionStorage.getItem('30') !== '0') && (sessionStorage.getItem('30') !== null)) ? equipo += "Baños Mixtos, " : equipo += "";
+    ((sessionStorage.getItem('31') !== '0') && (sessionStorage.getItem('31') !== null)) ? equipo += "" : equipo += "";
+    ((sessionStorage.getItem('32') !== '0') && (sessionStorage.getItem('32') !== null)) ? equipo += "" : equipo += "";
+    ((sessionStorage.getItem('33') !== '0') && (sessionStorage.getItem('33') !== null)) ? equipo += "Port a Cool, " : equipo += "";
+
+    ((sessionStorage.getItem('34') !== '0') && (sessionStorage.getItem('34') !== null)) ? equipo += "Desague Fosas, " : equipo += "";
+    ((sessionStorage.getItem('35') !== '0') && (sessionStorage.getItem('35') !== null)) ? equipo += "Vactor, " : equipo += "";
+    ((sessionStorage.getItem('36') !== '0') && (sessionStorage.getItem('36') !== null)) ? equipo += "Hidrojet, " : equipo += "";
+    ((sessionStorage.getItem('37') !== '0') && (sessionStorage.getItem('37') !== null)) ? equipo += "Inspección de Tubería, " : equipo += "";
+
 
     const num_usuarios = 0;
     const nota = 'Solicitado desde la App'
@@ -68,6 +112,12 @@ const FormularioCotizar: React.FC = () => {
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
             }).then(function () {
+
+                for (let index = 0; index <= 40; index++) {
+                    sessionStorage.removeItem(index.toString());
+
+                }
+
                 window.location.href = '/Pedidos';
             });
 
@@ -111,7 +161,7 @@ const FormularioCotizar: React.FC = () => {
                 <IonContent fullscreen>
                     <IonHeader >
                         <IonToolbar>
-                            <TopBarBlue></TopBarBlue>
+                            <TopBarBlue />
                         </IonToolbar>
                     </IonHeader>
                     <div className='formulario2'>

@@ -44,11 +44,13 @@ const Register: React.FC = () => {
             return
         }
 
+        console.log(req);
+
         var Swal = require('sweetalert2');
 
         Swal.fire({
-            title: 'Registro no disponible',
-            text: 'El servicio de registro no se encuentra disponible por el momento.',
+            title: 'Este correo ya está registrado',
+            html: 'Este correo parece ya estar registrado. <br> Puedes intentar con otro ó <br> <a href="./password"> Click aquí para recuperar tu contraseña.<a>',
             icon: 'error',
             confirmButtonText: 'Aceptar'
         })
@@ -78,7 +80,7 @@ const Register: React.FC = () => {
                         </div>
                         <div className='campos'>
                             <IonInput className="input" type='text' name="nombre_apellido" onIonChange={handleUserChange} required={checkRequired()}></IonInput>
-                            <IonLabel className='label'>Nombre y apellido</IonLabel>
+                            <IonLabel className='label'>Nombre Completo</IonLabel>
                         </div>
                         <div className='campos'>
                             <IonInput className="input" type='email' name="correo" onIonChange={handleCorrChange}  required={checkRequired()}></IonInput>

@@ -13,6 +13,7 @@ import imagen_desague from '../img/imagen-desague.png';
 import { NavLink } from 'react-router-dom';
 import TopBar from '../components/top-bar/topbar';
 import { guardarAtajos, guardar } from '../components/catalogos/guardar';
+import { useEffect, useState } from 'react';
 
 // import img_nota1 from '../img/imagen-nota-1.png';
 // import img_nota2 from '../img/imagen-nota-2.png';
@@ -22,9 +23,66 @@ let img_nota1 = 'http://ventasletrimex.com.mx/letrimex_v2/public/img/productos/i
 let img_nota2 = 'http://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-2.png';
 let img_nota3 = 'http://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-3.png';
 
+var link1 = '';
+var link2 = '';
+var link3 = '';
+
+let getlink = async(numero: any) => {
+  let url = `https://ventasletrimex.com.mx/letrimex_v2/public/listarGaleria/inicio`;
+  link1 = 'https://letrimex.com.mx/';
+  link2 = 'https://letrimex.com.mx/';
+  link3 = 'https://letrimex.com.mx/';
+
+  const req = await fetch(url);
+
+  if (req.ok) {
+    const data = await req.json();
+    // console.log(data['data'][0]['link']);
+    link1 = data['data'][0]['link'];
+    link2 = data['data'][1]['link'];
+    link3 = data['data'][2]['link'];
+  } 
+
+  switch (numero) {
+    case 1:
+      return link1;
+    case 2:
+      return link2;
+    case 3:
+      return link3;
+    default:
+      return 'htps://letrimex.com.mx/';
+  }
+}
 
 
 const Tab1: React.FC = () => {
+
+  let [links1, setLinks1] = useState('');
+  useEffect(() => {
+    const get1 = async() => {
+      setLinks1(await getlink(1))      
+    }
+    get1()
+  }, [] )
+
+  let [links2, setLinks2] = useState('');
+  useEffect(() => {
+    const get2 = async() => {
+      setLinks2(await getlink(2))     
+    }
+    get2()
+  }, [] )
+
+  let [links3, setLinks3] = useState('');
+  useEffect(() => {
+    const get3 = async() => {
+      setLinks3(await getlink(3))
+    }
+    get3()
+  }, [] )
+
+
   localStorage.clear();
   console.log("borrado");
 
@@ -131,19 +189,21 @@ const Tab1: React.FC = () => {
         <div className='NS'>
           <div className='ion-text-center'>
             <h2>NEWSLETTER</h2>
+            <p style={{ color: "white" }}></p>
+
             <p className=''>Conoce las últimas tendencias
               <br />y novedades en: </p>
             <a style={{ color: "white" }} href="https://letrimex.com.mx/"><p>letrimex.com.mx</p></a>
           </div>
           <div className='NS-img'>
             <div >
-              <a href="https://letrimex.com.mx/bide-tendencia-2023-imaginas/" target='_blank'><img src={img_nota1} alt="nota-1" /></a>
+              <a href={links1} target='_blank'><img src={img_nota1} alt="nota-1" /></a>
             </div>
             <div >
-              <a href="https://letrimex.com.mx/5-pasos-decorar-boda-otono/" target='_blank'><img src={img_nota2} alt="nota-2" /></a>
+              <a href={links2} target='_blank'><img src={img_nota2} alt="nota-2" /></a>
             </div>
             <div >
-              <a href="https://letrimex.com.mx/cuantos-sanitarios-necesito-proyecto-evento/" target='_blank'><img src={img_nota3} alt="nota-2" /></a>
+              <a href={links3} target='_blank'><img src={img_nota3} alt="nota-2" /></a>
             </div>
           </div>
         </div>
@@ -154,7 +214,7 @@ const Tab1: React.FC = () => {
 };
 
 
-const getlinks = async () => {
+const getlinks1231 = async () => {
   let url = `https://ventasletrimex.com.mx/letrimex_v2/public/getBanner`;
   const req = await fetch(url);
 

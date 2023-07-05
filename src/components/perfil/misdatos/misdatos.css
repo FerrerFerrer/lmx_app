@@ -1,9 +1,23 @@
 .misdatosopciones{
-        font-size: 10px;
+        font-size: 20px;
         color: white;
         background-color: #083c64;
         border-radius: 10px;
-        width: 55%;
+        width: 75%;
+        margin: 5px 0px;
+        padding: 4px;
+}
+
+.misdatosopciones2{
+        font-size: 20px;
+        color: white !important;
+        background-color: #870808;
+        border-radius: 10px;
+        width: 75%;
+        margin: 5px 0px !important;
+        padding: 4px;
+        text-align: center;
+        text-decoration: none;
 }
 
 .misdatosform{

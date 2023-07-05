@@ -3,6 +3,7 @@ import './subcatalogo.css';
 import { construccion, evento, servicio } from '../../reducers/data';
 import TopBarBlue from '../top-bar/topbarblue';
 import { alertCircle } from 'ionicons/icons';
+import { NavLink } from 'react-router-dom';
 
 let claseContenedorImg = "";
 
@@ -76,9 +77,12 @@ const SubCatalogo: React.FC = () => {
                     </div>
                 }
                 <div className='opciones2'>
-                    <button className='op2'>Hacer Pedido</button>
-                    <button className='op2'>Seguir comprando</button>
+                    <NavLink to={'/Tab3'}>
+                        <button className='op2'>Hacer pedido</button>
+                    </NavLink>
+                    {/* <button className='op2'>Seguir comprando</button> */}
                 </div>
+
             </IonContent>
         </IonPage>
     );

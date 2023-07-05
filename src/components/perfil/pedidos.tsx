@@ -1,14 +1,9 @@
-import { IonCol, IonContent, IonHeader, IonIcon, IonPage, IonGrid, IonRow, IonToolbar } from "@ionic/react";
+import { IonCol, IonContent, IonHeader, IonPage, IonGrid, IonRow, IonToolbar } from "@ionic/react";
 import React, { useEffect, useState } from "react";
 import './pedidos.css';
 import TopBarBlue from '../top-bar/topbarblue';
-import { NavLink } from "react-router-dom";
 import imgchek from '../../img/check.png';
 import imgnocheck from '../../img/nocheck.png';
-
-// icons
-import { alertCircleOutline, personOutline, readerOutline, documentTextOutline, bagOutline, locationOutline, notificationsOutline, helpCircleOutline } from 'ionicons/icons';
-
 
 
 const Pedidos: React.FC = () => {
@@ -86,6 +81,7 @@ const Pedidos: React.FC = () => {
 const getdata = async () => {
     let name = sessionStorage.getItem('nombre');
     const url = `https://ventasletrimex.com.mx/letrimex_v2/public/obtenerSolicitud/${name}`;
+    console.log(url);
 
     const req = await fetch(url);
     let pedidos = [];

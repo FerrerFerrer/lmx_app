@@ -14,8 +14,6 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import TopBarBlue from '../components/top-bar/topbarblue';
 import { IonCol, IonGrid, IonRow } from '@ionic/react';
-import { cloudyNight, ear, earOutline } from 'ionicons/icons';
-
 
 const Tab2: React.FC = () => {
   const [user, setUser] = useState('');

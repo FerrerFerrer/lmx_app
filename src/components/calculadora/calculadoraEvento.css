@@ -90,7 +90,7 @@
 }
 
 .horas-contenedor input[type="radio"] + label {
-    margin-right: 20px;
+    margin: 5px 15px;
 }
 
 .horas-contenedor input[type="radio"]:focus + label {

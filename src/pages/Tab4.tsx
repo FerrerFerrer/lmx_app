@@ -47,7 +47,7 @@ const Tab4: React.FC = () => {
                   </IonCol>
                 </IonRow>
               </NavLink>
-              <NavLink to={{ pathname: 'https://letrimex.com.mx' }} target='_blank'>
+              <NavLink to={{ pathname: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x86886d2b876db82d:0xd16ff84a73d69024?source=g.page.share' }} target='_blank'>
                 <IonRow>
                   <IonCol size='11'>
                     <p className='links' >Nuestras sucursales</p>

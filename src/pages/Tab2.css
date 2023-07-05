@@ -58,6 +58,28 @@ h1{
     font-size: 4vw;
 }
 
+.recuperarBtn2{
+    font-size: 17px !important;
+    width: 65% !important;
+    padding: 0.5em 2em;
+    background: transparent;
+    color: #0babdc;
+    border-radius: 15px !important;
+    font-size: 4vw;
+    margin-top: 10px;
+}
+
+.swal2-cancel{
+    padding:15px !important;
+    margin: 10px !important;
+}
+.swal2-confirm{
+    background-color: #083c64 !important;
+    padding:15px !important;
+    margin: 10px !important;
+
+}
+
 /* tablogin */
 
 .welcome{

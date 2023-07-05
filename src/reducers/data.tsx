@@ -119,19 +119,21 @@ export const evento = [
     " - Dispensador de toallas <br> - Dispensador de papel sanitario"},
     
     { id: 10, name: "Black Elite", tipo: "evento", categoria: "Black elite", images: blackElite, tamañoImagen: "g", 
-    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    ficha:"<span style='color:#083c64'> Dale a tu evento un toque inolvidable con nuestra caseta Black Elite. </span> <br> <br> <span style='color:#083c64'>Medidas:</span> <br> Alto: 3.10M <br> Ancho: 2.10M <br> Largo: 6.20M <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    " <br> - Climatización <br> - Lavabo con Espejo <br> - Dispensadores de jabón y toallas <br> - Sanitarios para hombre y mujer <br> - Depósito de agua incluido " },
     
     { id: 11, name: "Luxuria", tipo: "evento", categoria: "Luxuria", images: luxuria, tamañoImagen: "g", 
-    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    ficha:"<span style='color:#083c64'>Caseta Luxuria VIP</span> <br> <br> <span style='color:#083c64'>Medidas:</span> <br> Ancho: 2.60M <br> Largo: 8.10M <br><br> <span style='color:#083c64'>Baño de Hombres:</span> " + 
+    " <br> - 2 inodoros privados de porcelana. <br> - 3 urinarios de pared con puntos de acceso separados. <br> - 2 lavabos de China en gabinetes de roble con espejo de roble. <br> - Tragaluz teñido de doble panel.  " +
+    "<br><br> <span style='color:#083c64'>Baño de Mujeres:</span>" + 
+    " <br> - 4 baños privados de porcelana, con puntos de acceso separados. <br> - 2 Fregadero de China en gabinetes de roble con espejo de roble de cuerpo entero. <br> - Tragaluz teñido de doble panel.  " + 
+    "<br><br> <span style='color:#083c64'>Detalles:</span>" + 
+    " <br> - Acabados de lujo en roble. <br> - Dispensador de toalla y jabón. <br> - Espejos con marcos de roble. <br> - 3 lavabos de porcelana. <br> - 5 baños y 3 migitorios en total para damas y caballeros. " },
     
     { id: 12, name: "Port a Cool", tipo: "evento", categoria: "Port a cool", images: portacool, tamañoImagen: "g", 
-    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 1.70M <br> Largo: 1.57M <br> Ancho: 81CM <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Velocidad Variable <br> - Distribuvión de aire: 10,100 CFM. <br> - Amperes totales: 11. <br> - Reserva de agua: 32 Galones. <br> - Peso total: 108kg. " + 
+    " <br> - Capacidad de enfriamento: 808 m2"},
 ]
 
 export const construccion = [
@@ -230,9 +232,10 @@ export const construccion = [
     " <br> - Techo interior en panel de yeso. <br> - Recubrimiento exterior de techo en lámina de acero totalmente sellado e impermeabilizado."},
     
     { id: 20, name: "Fosas Portátil", tipo: "construccion", categoria: "Fosas portátiles", images: fosasPortatiles, tamañoImagen: "c", 
-    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+      ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 46CM <br> Largo: 1.83M <br> Ancho: 1.22M <br> Peso vacío: 45Kg. <br><br> <span style='color:#083c64'>Especificaciones:</span> " + 
+    "<br> - Nuestras fosas son ideales para oficinas y almacenes móviles según sus necesidades. " + 
+    " <br> - Capacidad de almacenamiento: 250 galones - 940 Lt. <br> <br> Ideal para almacenamiento de residuos a granel puestas para dar cabida a diversas configuraciones de plomería no roscados o uniones de cemento." +
+    "<br> El tiempo de instalación más rápida que los competidores, proporciona almacenamiento versátil para oficinas o remolques en los lugares de trabajo."},
     
     { id: 21, name: "Contenedor Portátil 8x20", tipo: "construccion", categoria: "Contenedores", images: contenedorProducto, tamañoImagen: "g", 
     ficha:"<span style='color:#083c64'>Largo:</span>" +
@@ -299,9 +302,9 @@ export const construccion = [
     " <br> - <br> - "},
     
     { id: 33, name: "Port a Cool", tipo: "construccion", categoria: "Port a cool", images: portacool, tamañoImagen: "c", 
-    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: pendiente <br> Ancho: pendiente <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    ficha:"<span style='color:#083c64'>Medidas:</span> <br> Alto: 1.70M <br> Largo: 1.57M <br> Ancho: 81CM <br><br> <span style='color:#083c64'>Caracteristicas:</span> " + 
+    "<br> - Velocidad Variable <br> - Distribuvión de aire: 10,100 CFM. <br> - Amperes totales: 11. <br> - Reserva de agua: 32 Galones. <br> - Peso total: 108kg. " + 
+    " <br> - Capacidad de enfriamento: 808 m2"},
 ]
 
 export const servicio = [
@@ -321,7 +324,7 @@ export const servicio = [
     "<br> - <br> - <br> - <br> - <br> - " + 
     " <br> - <br> - "},
     
-    { id: 37, name: "Inspección de tubería con camara", tipo: "servicio", categoria: "Inspección de tuberías", images: camaraInspeccion, tamañoImagen: "c", 
+    { id: 37, name: "Inspección de tubería con cámara", tipo: "servicio", categoria: "Inspección de tuberías", images: camaraInspeccion, tamañoImagen: "c", 
     ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
     "<br> - <br> - <br> - <br> - <br> - " + 
     " <br> - <br> - "},
