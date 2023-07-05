@@ -44,7 +44,7 @@ const Catalogo: React.FC = () => {
                 {
                     <div className={containerImg}>
                         {
-
+                        
                             data.map((producto: any) => (
                                 <div key={producto.id}>
                                     <NavLink to={{ pathname: '/subcatalogo' }}
