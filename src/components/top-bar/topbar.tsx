@@ -8,12 +8,12 @@ const TopBar: React.FC = () => {
         <IonToolbar >
             <IonRow className='ion-align-items-center ion-justify-content-between '>
                 <IonCol size="6">
-                    <IonTitle>
-                        <img style={{ objectFit: 'contain', width: '5rem' }} src={logo_superior} alt="logo" id="logo_superior" /> 
+                    <IonTitle className="padding1">
+                        <img style={{ objectFit: 'contain', width: '5em' }} src={logo_superior} alt="logo" id="logo_superior" /> 
                     </IonTitle> 
                 </IonCol>
                 <IonCol size="6">
-                    <IonSearchbar className='searchbarTop' show-clear-button="never" placeholder="Buscar"></IonSearchbar>
+                    {/* <IonSearchbar className='searchbarTop' show-clear-button="never" placeholder="Buscar"></IonSearchbar> */}
                 </IonCol>
             </IonRow>
         </IonToolbar>

@@ -25,7 +25,7 @@ const CalculadoraConstruccion: React.FC = () => {
             baños = 4;
         } else if (trabajadores >= 81 && trabajadores <= 100) {
             baños = 5;
-        }else{
+        } else {
             baños = trabajadores / 20;
         }
 
@@ -39,23 +39,21 @@ const CalculadoraConstruccion: React.FC = () => {
             cancelButtonText: 'Cancelar',
 
         }).then(function (inputValue) {
-            if (inputValue.isConfirmed===true) {
+            if (inputValue.isConfirmed === true) {
                 sessionStorage.setItem('1', (Math.ceil(baños)).toString());
                 window.location.href = '/Tab3';
-              } else {
+            } else {
                 return;
-              }
+            }
         });
     }
 
     return (
         <IonPage>
-            <IonHeader >
-                <IonToolbar>
-                    <TopBarBlue />
-                </IonToolbar>
-            </IonHeader>
             <IonContent fullscreen>
+                <IonHeader >
+                    <TopBarBlue />
+                </IonHeader>
                 <div className="cuerpo">
                     <form method="post" onSubmit={calcular}>
                         <h1 className="tituloIndexC">Baños para construccion</h1>

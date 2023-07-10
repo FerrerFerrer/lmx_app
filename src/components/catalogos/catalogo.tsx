@@ -37,15 +37,14 @@ const Catalogo: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <IonHeader >
-                    <IonToolbar>
-                        <TopBarBlue />
-                    </IonToolbar>
-                </IonHeader>
+            <IonHeader >
+                    <TopBarBlue />
+            </IonHeader>
                 <img className='tituloImg' src={head} alt="" />
                 {
                     <div className={containerImg}>
                         {
+
                             data.map((producto: any) => (
                                 <div key={producto.id}>
                                     <NavLink to={{ pathname: '/subcatalogo' }}

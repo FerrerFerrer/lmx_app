@@ -11,13 +11,8 @@ const Perfil: React.FC = () => {
     return (
         <IonPage className="perfil">
             <IonContent fullscreen>
-                <IonHeader>
-                    <IonToolbar>
-                    </IonToolbar>
-                </IonHeader>
                 <div className="d-flex justify-content-center bienvenido">
                     <h3>Bienvenid@ {nombre}</h3>
-                    
                 </div>
                 <div className="options ">
                     <IonRow>
@@ -52,8 +47,8 @@ const Opciones = (icono: any, texto: string, ruta: string, size: string) => {
         <IonCol size={size} className="d-flex justify-content-center">
             <div className="d-flex justify-content-center">
                 <NavLink to={ruta} className="style-opciones">
-                        <IonIcon size="large" className="iconos" icon={icono}></IonIcon>
-                        <p>{texto}</p>
+                    <IonIcon size="large" className="iconos" icon={icono}></IonIcon>
+                    <p>{texto}</p>
                 </NavLink>
             </div>
         </IonCol>

@@ -19,68 +19,68 @@ import { useEffect, useState } from 'react';
 // import img_nota2 from '../img/imagen-nota-2.png';
 // import img_nota3 from '../img/imagen-nota-3.png';
 
-let img_nota1 = 'http://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-1.png';
-let img_nota2 = 'http://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-2.png';
-let img_nota3 = 'http://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-3.png';
-
-var link1 = '';
-var link2 = '';
-var link3 = '';
-
-let getlink = async(numero: any) => {
-  let url = `https://ventasletrimex.com.mx/letrimex_v2/public/listarGaleria/inicio`;
-  link1 = 'https://letrimex.com.mx/';
-  link2 = 'https://letrimex.com.mx/';
-  link3 = 'https://letrimex.com.mx/';
-
-  const req = await fetch(url);
-
-  if (req.ok) {
-    const data = await req.json();
-    // console.log(data['data'][0]['link']);
-    link1 = data['data'][0]['link'];
-    link2 = data['data'][1]['link'];
-    link3 = data['data'][2]['link'];
-  } 
-
-  switch (numero) {
-    case 1:
-      return link1;
-    case 2:
-      return link2;
-    case 3:
-      return link3;
-    default:
-      return 'htps://letrimex.com.mx/';
-  }
-}
-
 
 const Tab1: React.FC = () => {
 
+  let img_nota1 = 'https://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-1.png';
+  let img_nota2 = 'https://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-2.png';
+  let img_nota3 = 'https://ventasletrimex.com.mx/letrimex_v2/public/img/productos/inicio/imagen-nota-3.png';
+
+  var link1 = '';
+  var link2 = '';
+  var link3 = '';
+
+  let getlink = async (numero: any) => {
+    let url = `https://ventasletrimex.com.mx/letrimex_v2/public/listarGaleria/inicio`;
+    link1 = 'https://letrimex.com.mx/';
+    link2 = 'https://letrimex.com.mx/';
+    link3 = 'https://letrimex.com.mx/';
+
+    const req = await fetch(url);
+
+    if (req.ok) {
+      const data = await req.json();
+      // console.log(data['data'][0]['link']);
+      link1 = data['data'][0]['link'];
+      link2 = data['data'][1]['link'];
+      link3 = data['data'][2]['link'];
+    }
+
+    switch (numero) {
+      case 1:
+        return link1;
+      case 2:
+        return link2;
+      case 3:
+        return link3;
+      default:
+        return 'htps://letrimex.com.mx/';
+    }
+  }
+
   let [links1, setLinks1] = useState('');
   useEffect(() => {
-    const get1 = async() => {
-      setLinks1(await getlink(1))      
+    const get1 = async () => {
+      setLinks1(await getlink(1))
     }
     get1()
-  }, [] )
+  }, [])
 
   let [links2, setLinks2] = useState('');
   useEffect(() => {
-    const get2 = async() => {
-      setLinks2(await getlink(2))     
+    const get2 = async () => {
+      setLinks2(await getlink(2))
     }
     get2()
-  }, [] )
+  }, [])
 
   let [links3, setLinks3] = useState('');
   useEffect(() => {
-    const get3 = async() => {
+    const get3 = async () => {
       setLinks3(await getlink(3))
     }
     get3()
-  }, [] )
+  }, [])
 
 
   localStorage.clear();
@@ -103,12 +103,10 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <IonHeader>
-          <IonToolbar >
             <TopBar />
-          </IonToolbar>
         </IonHeader>
         <div className='ion-text-center'>
-          <p id='texto-suscribete'>Suscríbete a nuestro newsletter</p>
+          <p id='texto-suscribete'>¡Suscríbete a nuestro Newsletter!</p>
           {banner}
         </div>
         <div className='block-img '>

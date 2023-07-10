@@ -63,11 +63,6 @@ const RecoveryPass: React.FC = () => {
   return (
     <IonPage className='login'>
       <IonContent fullscreen>
-        <IonHeader >
-          <IonToolbar>
-
-          </IonToolbar>
-        </IonHeader>
         <div className='formulario'>
           <form onSubmit={enviar}>
             <div>

@@ -63,9 +63,7 @@ const Tab3: React.FC = () => {
   return (
     <IonPage>
         <IonHeader>
-          <IonToolbar>
             <TopBar />
-          </IonToolbar>
         </IonHeader>
       <IonContent fullscreen>
 
@@ -292,7 +290,11 @@ export const Modal = ({ showModal, setShowModal }) => {
 
                 <h4 className='mtitulo2'>GENERAL</h4>
                 <h5 className='mtexto'>- El incumplimiento en el pago y la falta de órdenes de compra u 
-                otro documento importante, es causa de la recolección de los equipos sin ???? (no mandaron el texto completo)</h5>
+                otro documento importante, es causa de la recolección de los equipos sin previo aviso; aún cuando se 
+                haya recolectado, seguirán corriendo las rentas hasta la realización total del pago del periodo facturado.
+                No se realizará servicio de recolección del equipo en caso de existir algún adeudo u órdenes de comprandoo cualquier
+                otro documento pendiente. En caso de haber solicitado una recolección de equipo, deberá poner al
+                corriente su cuenta y/o liquidarla en su totalidad para proceder. </h5>
 
 
                 <IonGrid>

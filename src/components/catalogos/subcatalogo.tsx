@@ -56,11 +56,9 @@ const SubCatalogo: React.FC = () => {
         <IonPage>
             <IonContent fullscreen>
                 <IonHeader >
-                    <IonToolbar>
                         <TopBarBlue />
-                    </IonToolbar>
                 </IonHeader>
-                <h1>{categoria}</h1>
+                <h1 className='categ'>{categoria}</h1>
                 {
                     <div className={claseContenedorImg}>
                         {

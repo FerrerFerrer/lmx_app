@@ -7,12 +7,11 @@ const CalculadoraIndex: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader >
-                <IonToolbar>
-                    <TopBarBlue />
-                </IonToolbar>
-            </IonHeader>
             <IonContent fullscreen>
+                <IonHeader >
+                    <TopBarBlue />
+                </IonHeader>
+
                 <p className="tituloIndexC">SELECCIONE BAÑOS PARA OBRAS U EVENTOS SEGÚN SU NECESIDAD </p>
                 <div className="calculadora-option">
                     <NavLink to={'/calculadoraEvento'}>

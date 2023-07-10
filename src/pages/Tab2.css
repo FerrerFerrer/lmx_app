@@ -4,7 +4,7 @@
 
 h1{
     font-size: 6vw;
-    color: #083c64;
+    color: #083c64 !important;
 }
 #usuario{
     width: 20vw;
@@ -106,7 +106,11 @@ h1{
 h5{
     text-align: center;
     font-size:12px !important;
-    color: #083c64;
+    color: #083c64 !important;
+}
+
+.textblue{
+    color: #083c64 !important;
 }
 
 .imgtamaño{

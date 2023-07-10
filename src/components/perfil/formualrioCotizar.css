@@ -1,5 +1,5 @@
 h2{
-    color: #083c64;
+    color: #083c64 !important;
     margin: 30px;
 
 }
@@ -13,4 +13,8 @@ h2{
 body{
     position: unset !important;
     transform: unset !important;
+}
+
+.textblue, h1{
+    color: #083c64 !important;
 }

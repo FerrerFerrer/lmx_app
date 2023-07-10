@@ -8,10 +8,6 @@ const Tab4: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader >
-        <IonToolbar>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
         <IonGrid>
           <div className='contenedor'>

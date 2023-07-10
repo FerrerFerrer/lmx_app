@@ -128,12 +128,10 @@ const Tab2: React.FC = () => {
 
     return (
       <IonPage>
-        <IonHeader >
-          <IonToolbar>
-            <TopBarBlue />
-          </IonToolbar>
-        </IonHeader>
         <IonContent fullscreen>
+          <IonHeader >
+            <TopBarBlue />
+          </IonHeader>
 
           <div className='welcome'>
             <h1 className='welcome'>Bienvenid@ {sessionStorage.getItem('nombre')}</h1>

@@ -21,9 +21,7 @@ const Pedidos: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
-                <IonToolbar>
-                    <TopBarBlue />
-                </IonToolbar>
+                <TopBarBlue />
             </IonHeader>
             <IonContent fullscreen>
 

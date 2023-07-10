@@ -160,20 +160,18 @@ const FormularioCotizar: React.FC = () => {
             <IonPage className='login'>
                 <IonContent fullscreen>
                     <IonHeader >
-                        <IonToolbar>
-                            <TopBarBlue />
-                        </IonToolbar>
+                        <TopBarBlue />
                     </IonHeader>
                     <div className='formulario2'>
                         <form onSubmit={enviar2}>
                             <div>
-                                <h1 >Solicitud de Cotización</h1>
-                                <p>Asegurate de llenar todos los campos correctamente.</p>
-                                <p>Un vendedor se pondrá en contacto con usted.</p>
+                                <h1 className='textblue'>Solicitud de Cotización</h1>
+                                <p className='textblue'>Asegurate de llenar todos los campos correctamente.</p>
+                                <p className='textblue'>Un vendedor se pondrá en contacto con usted.</p>
 
                             </div>
 
-                            <h2>Datos de contacto</h2>
+                            <h2 className='textblue'>Datos de contacto</h2>
 
                             <div className='campos'>
                                 <IonInput className="input" type='text' name="nombre_apellido" value={nombre_contacto} required={checkRequired()} onIonChange={handleNombreChange} disabled></IonInput>
@@ -188,7 +186,7 @@ const FormularioCotizar: React.FC = () => {
                                 <IonLabel className='label'>Número de teléfono</IonLabel>
                             </div>
 
-                            <h2>Datos de la solicitud</h2>
+                            <h2 className='textblue'>Datos de la solicitud</h2>
 
                             <div className='campos'>
                                 <IonSelect className="input" name="zona" onIonChange={handleZonaChange}>

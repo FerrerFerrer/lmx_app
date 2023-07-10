@@ -11,16 +11,15 @@ const Resultado: React.FC = () => {
     return (
         <div>
             <IonPage>
-                <IonHeader >
-                    <IonToolbar>
-                        <TopBarBlue />
-                    </IonToolbar>
-                </IonHeader>
                 <IonContent fullscreen>
+                    <IonHeader >
+                        <TopBarBlue />
+                    </IonHeader>
+
                     <div className="body-resultado-calculadora">
                         <div>
                             <h2>PARA LOS DATOS INGRESADOS SE RECOMIENDA UNA CANTIDAD DE:</h2>
-                            <p>{calculo.toString()}</p>    
+                            <p>{calculo.toString()}</p>
                             <p>Baños</p>
                         </div>
                         <div>

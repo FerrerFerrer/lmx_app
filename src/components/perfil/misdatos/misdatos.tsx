@@ -22,7 +22,7 @@ const Misdatos: React.FC = () => {
     }
 
     const eliminar = () => {
-        
+
 
         var Swal2 = require('sweetalert2');
 
@@ -40,11 +40,11 @@ const Misdatos: React.FC = () => {
 
         }).then(function (inputValue) {
 
-            if (inputValue.isConfirmed===true) {
+            if (inputValue.isConfirmed === true) {
                 eliminarParasiempre();
-              } else {
+            } else {
                 return;
-              }
+            }
         });
 
         return;
@@ -76,7 +76,7 @@ const Misdatos: React.FC = () => {
             });
             return
         }
-            
+
 
         var Swal = require('sweetalert2');
 
@@ -111,7 +111,7 @@ const Misdatos: React.FC = () => {
             });
             return
         }
-            
+
 
         var Swal = require('sweetalert2');
 
@@ -125,12 +125,10 @@ const Misdatos: React.FC = () => {
 
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
+            <IonContent fullscreen>
+                <IonHeader>
                     <TopBarBlue />
-                </IonToolbar>
-            </IonHeader>
-            <IonContent>
+                </IonHeader>
                 <div className="misdatosform">
                     <form>
                         <div>

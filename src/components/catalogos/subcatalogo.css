@@ -10,6 +10,11 @@
     margin: 5% 0 5% 0;
 }
 
+.categ{
+    color: #083c64 !important;
+    margin: 0 10px !important;
+}
+
 .gClass {
     width: 100%;
     color: #083c64;
@@ -26,11 +31,19 @@
 
 .op {
     padding: 0 5%;
-    margin: 0 5% !important;
+    margin: 0 2px !important;
+    width: 40% !important;
     color: white;
-    font-size: 15px !important;
+    font-size: 14px !important;
     background-color: #083c64;
     border-radius: 10px;
+    /* word-break: keep-all !important; */
+}
+
+@media (min-width: 700px) {
+    .op{
+        font-size: 12px !important;
+    }
 }
 
 .contador {
@@ -52,7 +65,7 @@
 /* chico */
 .c {
     width: 60%;
-    height: 8rem;
+    /* height: 8rem; */
 }
 
 .g {

@@ -311,22 +311,18 @@ export const servicio = [
     
     { id: 34, name: "Desagüe de fosas sépticas", tipo: "servicio", categoria: "Desagüe de fosas", images: camionDesague, tamañoImagen: "g", 
     ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    "<br> Brindamos servicio de desagüe de Fosas Sépticas residenciales, industriales, y comerciales con camiónes de diferentes capacidades según sus necesidades."},
     
     { id: 35, name: "Destape y mantenimiento con Vactor", tipo: "servicio", categoria: "Destape y mantenimiento de drenajes", images: camionVactor, tamañoImagen: "g", 
     ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    "<br> Contamos con servicio de desazolve, destape y mantenimiento de tuberías de drenaje obstruidas, utilizando equipo Vactor (extracción y recolección de lodos) con una capacidad de hasta 15,000 lts."},
     
     { id: 36, name: "Destape y mantenimiento con Hidrojet", tipo: "servicio", categoria: "Destape y mantenimiento de drenajes", images: camionDestape, tamañoImagen: "g", 
     ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    "<br> Contamos con servicio de desazolve, destape y mantenimiento de tuberías de drenaje obstruidas, utilizando equipo Hidrojet a una presión de 3,000 lbs para sondeo de tuberías de 2'' a 18'' de diámetro."},
     
     { id: 37, name: "Inspección de tubería con cámara", tipo: "servicio", categoria: "Inspección de tuberías", images: camaraInspeccion, tamañoImagen: "c", 
     ficha:"<span style='color:#083c64'>Caracteristicas:</span> " + 
-    "<br> - <br> - <br> - <br> - <br> - " + 
-    " <br> - <br> - "},
+    "<br> Inspección de tuberías con cámara."},
 ]
 

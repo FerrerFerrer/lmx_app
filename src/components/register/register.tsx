@@ -13,13 +13,13 @@ const Register: React.FC = () => {
     const [dire, setDire] = useState('');
     const [rfc, setRfc] = useState('');
 
-    const handleUserChange = (e: any) => {setUser(e.target.value);}
-    const handlePassChange = (e: any) => {setPass(e.target.value);}
-    const handleCorrChange = (e: any) => {setCorr(e.target.value);}
-    const handleTel1Change = (e: any) => {setTel1(e.target.value);}
-    const handleTel2Change = (e: any) => {setTel2(e.target.value);}
-    const handleDireChange = (e: any) => {setDire(e.target.value);}
-    const handleRfcChange = (e: any) => {setRfc(e.target.value);}
+    const handleUserChange = (e: any) => { setUser(e.target.value); }
+    const handlePassChange = (e: any) => { setPass(e.target.value); }
+    const handleCorrChange = (e: any) => { setCorr(e.target.value); }
+    const handleTel1Change = (e: any) => { setTel1(e.target.value); }
+    const handleTel2Change = (e: any) => { setTel2(e.target.value); }
+    const handleDireChange = (e: any) => { setDire(e.target.value); }
+    const handleRfcChange = (e: any) => { setRfc(e.target.value); }
 
 
     const enviar = async (e) => {
@@ -63,17 +63,12 @@ const Register: React.FC = () => {
     return (
         <IonPage className='login'>
             <IonContent fullscreen>
-                <IonHeader >
-                    <IonToolbar>
-
-                    </IonToolbar>
-                </IonHeader>
                 <div className='formulario'>
                     <form id="fregistro" onSubmit={enviar} >
                         <div>
                             <h1 >Bienvenid@ a</h1>
                             <h1>Letrimex</h1><br />
-                            <p>Por favor, antes de registrarte asegurate<br />
+                            <p className='textblue'>Por favor, antes de registrarte asegurate<br />
                                 de haber llenado todos los<br />
                                 campos correctamente
                             </p><br />
@@ -83,27 +78,27 @@ const Register: React.FC = () => {
                             <IonLabel className='label'>Nombre Completo</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='email' name="correo" onIonChange={handleCorrChange}  required={checkRequired()}></IonInput>
+                            <IonInput className="input" type='email' name="correo" onIonChange={handleCorrChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Correo electrónico</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="contraseña" onIonChange={handlePassChange}  required={checkRequired()}></IonInput>
+                            <IonInput className="input" type='text' name="contraseña" onIonChange={handlePassChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Contraseña</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='tel' name="telefono" onIonChange={handleTel1Change}  required={checkRequired()} maxlength={10}></IonInput>
+                            <IonInput className="input" type='tel' name="telefono" onIonChange={handleTel1Change} required={checkRequired()} maxlength={10}></IonInput>
                             <IonLabel className='label'>Número de teléfono</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='tel' name="telefono_of" onIonChange={handleTel2Change}  required={checkRequired()} maxlength={10}></IonInput>
+                            <IonInput className="input" type='tel' name="telefono_of" onIonChange={handleTel2Change} required={checkRequired()} maxlength={10}></IonInput>
                             <IonLabel className='label'>Tel. de oficina</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="direccion" onIonChange={handleDireChange}  required={checkRequired()}></IonInput>
+                            <IonInput className="input" type='text' name="direccion" onIonChange={handleDireChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Dirección</IonLabel>
                         </div>
                         <div className='campos'>
-                            <IonInput className="input" type='text' name="rfc" onIonChange={handleRfcChange}  required={checkRequired()}></IonInput>
+                            <IonInput className="input" type='text' name="rfc" onIonChange={handleRfcChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>RFC</IonLabel>
                         </div>
                         <div>
