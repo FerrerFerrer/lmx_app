@@ -90,7 +90,7 @@ const Misdatos: React.FC = () => {
 
     const editar = async () => {
 
-        const url = `https://ventasletrimex.com.mx/letrimex_v2/public/editarapp/${nombre_contacto}/${correo_contacto}/${telefono_contacto}/${direccion}/${rfc}`;
+        const url = `https://ventasletrimex.com.mx/letrimex_v2/public/editarapp/${nombre_contacto}/${correo_contacto}/${telefono_contacto}/${direccion}/NULO`;
 
         const req = await fetch(url);
 
@@ -151,10 +151,10 @@ const Misdatos: React.FC = () => {
                             <IonInput className="input" type='text' name="direccion" value={direccion} onIonChange={handleDireccionChange}></IonInput>
                             <IonLabel className='label'>Dirección</IonLabel>
                         </div>
-                        <div className='campos'>
+                        {/* <div className='campos'>
                             <IonInput className="input" type='text' name="rfc" value={rfc} onIonChange={handleRFCChange}></IonInput>
                             <IonLabel className='label'>RFC</IonLabel>
-                        </div>
+                        </div> */}
                         <div>
                             <div>
                                 <button type="button" className='misdatosopciones' onClick={editar}>Guardar cambios</button>

@@ -44,23 +44,29 @@ const Pedidos: React.FC = () => {
                                         <p className="columns">Solicitud recibida</p>
                                     </IonCol>
                                     <IonCol>
-                                        <img src={id.status_solicitud == 3 || id.status_solicitud >= 5 && id.status_solicitud <= 7 || id.status_solicitud == 9 ? imgchek : imgnocheck} alt="check" />
+                                        <img src={id.respuesta == 9 || id.respuesta == 2 || id.respuesta == 7 || id.respuesta == 'Si, se realizó la cotización' || id.respuesta == 1 || id.respuesta == 3 ? imgchek : imgnocheck} alt="check" />
                                         <p className="columns">Solicitud en seguimiento</p>
                                     </IonCol>
                                     <IonCol>
-                                        <img src={id.status_solicitud >= 5 && id.status_solicitud <= 6 || id.status_solicitud == 9 ? imgchek : imgnocheck} alt="check" />
+                                        {/* <img src={id.status_solicitud >= 5 && id.status_solicitud <= 6 || id.status_solicitud == 9 ? imgchek : imgnocheck} alt="check" /> */}
+                                        <img src={id.respuesta == 7 || id.respuesta == 'Si, se realizó la cotización' || id.respuesta == 1 || id.respuesta == 3 ? imgchek : imgnocheck} alt="chek" />
                                         <p className="columns">Cotización realizada</p>
                                     </IonCol>
                                     <IonCol>
-                                        <img src={id.status_solicitud == 7 ? imgchek : imgnocheck} alt="chek" />
+                                        <img src={id.respuesta == 7 || id.respuesta == 'Si, se realizó la cotización' || id.respuesta == 1 || id.respuesta == 3 ? imgchek : imgnocheck} alt="chek" />
                                         <p className="columns">Pedido realizado</p>
                                     </IonCol>
                                 </IonRow>
                             </IonGrid>
 
-                            <p className="subtitulomalo">{id.status_solicitud == 4 ? 'SOLICITUD RECHAZADA' : null}</p>
-                            <p className="subtitulomalo">{id.status_solicitud == 8 ? 'SOLICITUD CANCELADA' : null}</p>
-                            <p className="subtitulomalo">{id.status_solicitud == 10 ? 'NO SE CERRÓ LA VENTA' : null}</p>
+                            <p className="subtitulomalo">{id.respuesta == 4 ? 'SOLICITUD RECHAZADA' : null}</p>
+                            <p className="subtitulomalo">{id.respuesta == 8 ? 'SOLICITUD CANCELADA' : null}</p>
+                            <p className="subtitulomalo">{id.respuesta == 10 ? 'NO SE CERRÓ LA VENTA' : null}</p>
+                            <p className="subtitulomalo">{id.respuesta == 'No contesto el cliente' ? 'No contestó el cliente' : null}</p>
+                            <p className="subtitulomalo">{id.respuesta == 'No podemos dar el servico' ? 'No se puede dar el servico' : null}</p>
+                            <p className="subtitulomalo">{id.respuesta == 'Datos de contacto incorrectos' ? 'Datos incorrectos, vuelva a intentar' : null}</p>
+
+                            
 
 
                         </div>

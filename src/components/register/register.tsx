@@ -9,24 +9,24 @@ const Register: React.FC = () => {
     const [pass, setPass] = useState('');
     const [correo, setCorr] = useState('');
     const [tel1, setTel1] = useState('');
-    const [tel2, setTel2] = useState('');
+    // const [tel2, setTel2] = useState('');
     const [dire, setDire] = useState('');
-    const [rfc, setRfc] = useState('');
+    // const [rfc, setRfc] = useState('');
 
     const handleUserChange = (e: any) => { setUser(e.target.value); }
     const handlePassChange = (e: any) => { setPass(e.target.value); }
     const handleCorrChange = (e: any) => { setCorr(e.target.value); }
     const handleTel1Change = (e: any) => { setTel1(e.target.value); }
-    const handleTel2Change = (e: any) => { setTel2(e.target.value); }
+    // const handleTel2Change = (e: any) => { setTel2(e.target.value); }
     const handleDireChange = (e: any) => { setDire(e.target.value); }
-    const handleRfcChange = (e: any) => { setRfc(e.target.value); }
+    // const handleRfcChange = (e: any) => { setRfc(e.target.value); }
 
 
     const enviar = async (e) => {
         e.preventDefault();
 
 
-        const url = `https://ventasletrimex.com.mx/letrimex_v2/public/registroapp/${nombre}/${pass}/${correo}/${tel1}/${tel2}/${dire}/${rfc}`;
+        const url = `https://ventasletrimex.com.mx/letrimex_v2/public/registroapp/${nombre}/${pass}/${correo}/${tel1}/000/${dire}/NULO`;
 
         const req = await fetch(url);
 
@@ -89,18 +89,18 @@ const Register: React.FC = () => {
                             <IonInput className="input" type='tel' name="telefono" onIonChange={handleTel1Change} required={checkRequired()} maxlength={10}></IonInput>
                             <IonLabel className='label'>Número de teléfono</IonLabel>
                         </div>
-                        <div className='campos'>
+                        {/* <div className='campos'>
                             <IonInput className="input" type='tel' name="telefono_of" onIonChange={handleTel2Change} required={checkRequired()} maxlength={10}></IonInput>
                             <IonLabel className='label'>Tel. de oficina</IonLabel>
-                        </div>
+                        </div> */}
                         <div className='campos'>
                             <IonInput className="input" type='text' name="direccion" onIonChange={handleDireChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>Dirección</IonLabel>
                         </div>
-                        <div className='campos'>
+                        {/* <div className='campos'>
                             <IonInput className="input" type='text' name="rfc" onIonChange={handleRfcChange} required={checkRequired()}></IonInput>
                             <IonLabel className='label'>RFC</IonLabel>
-                        </div>
+                        </div> */}
                         <div>
                             <button id='iniciarSesion'>Registrarme</button>
                         </div>
