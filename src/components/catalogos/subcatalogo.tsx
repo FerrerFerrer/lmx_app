@@ -80,7 +80,6 @@ const SubCatalogo: React.FC = () => {
                     </NavLink>
                     {/* <button className='op2'>Seguir comprando</button> */}
                 </div>
-
             </IonContent>
         </IonPage>
     );

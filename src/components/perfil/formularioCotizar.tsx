@@ -29,7 +29,7 @@ const FormularioCotizar: React.FC = () => {
     if (arreglo[0]['id'] <= 11) {
         categ = 'Evento';
 
-    } else if (arreglo[0]['id'] > 11 && arreglo[0]['id'] <= 20) {
+    } else if (arreglo[0]['id'] > 11 && arreglo[0]['id'] <= 33) {
         categ = 'Construccion';
 
     } else {
@@ -132,7 +132,7 @@ const FormularioCotizar: React.FC = () => {
                 confirmButtonText: 'Aceptar'
             })
         }
-
+        
     }
 
     const checkRequired = () => {
