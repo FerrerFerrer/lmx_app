@@ -37,14 +37,14 @@ const Tab2: React.FC = () => {
       console.log(data);
 
       //variables de sesion
-      sessionStorage.setItem('sesion', 'true');
-      sessionStorage.setItem('nombre', data['nombre']);
-      sessionStorage.setItem('correo', data['correo']);
-      sessionStorage.setItem('cel', data['cel']);
-      sessionStorage.setItem('rfc', data['rfc']);
-      sessionStorage.setItem('direccion', data['direccion']);
+      localStorage.setItem('sesion', 'true');
+      localStorage.setItem('nombre', data['nombre']);
+      localStorage.setItem('correo', data['correo']);
+      localStorage.setItem('cel', data['cel']);
+      localStorage.setItem('rfc', data['rfc']);
+      localStorage.setItem('direccion', data['direccion']);
 
-      // console.log(sessionStorage.getItem('direccion'));
+      // console.log(localStorage.getItem('direccion'));
 
       // window.location.href = 'tab1';
       window.location.reload();
@@ -61,17 +61,17 @@ const Tab2: React.FC = () => {
       icon: 'error',
       confirmButtonText: 'Aceptar'
     })
-    sessionStorage.setItem('sesion', 'false');
+    localStorage.setItem('sesion', 'false');
 
   }
 
   const cerrar = () => {
-    sessionStorage.setItem('sesion', 'false');
-    sessionStorage.setItem('nombre', null);
-    sessionStorage.setItem('correo', null);
-    sessionStorage.setItem('cel', null);
-    sessionStorage.setItem('rfc', null);
-    sessionStorage.setItem('direccion', null);
+    localStorage.setItem('sesion', 'false');
+    localStorage.setItem('nombre', null);
+    localStorage.setItem('correo', null);
+    localStorage.setItem('cel', null);
+    localStorage.setItem('rfc', null);
+    localStorage.setItem('direccion', null);
     window.location.reload();
 
   }
@@ -87,7 +87,7 @@ const Tab2: React.FC = () => {
     })
   }
 
-  if (sessionStorage.getItem('sesion') != 'true') {
+  if (localStorage.getItem('sesion') != 'true') {
     return (
       <IonPage className='login'>
         <IonContent fullscreen>
@@ -134,7 +134,7 @@ const Tab2: React.FC = () => {
           </IonHeader>
 
           <div className='welcome'>
-            <h1 className='welcome'>Bienvenid@ {sessionStorage.getItem('nombre')}</h1>
+            <h1 className='welcome'>Bienvenid@ {localStorage.getItem('nombre')}</h1>
           </div>
 
           <IonGrid>

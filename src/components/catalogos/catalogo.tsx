@@ -37,9 +37,9 @@ const Catalogo: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-            <IonHeader >
+                <IonHeader >
                     <TopBarBlue />
-            </IonHeader>
+                </IonHeader>
                 <img className='tituloImg' src={head} alt="" />
                 {
                     <div className={containerImg}>

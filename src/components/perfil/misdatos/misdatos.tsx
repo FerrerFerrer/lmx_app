@@ -6,11 +6,11 @@ import TopBarBlue from '../../top-bar/topbarblue';
 import usuario_img from '../../../img/usuario.png';
 const Misdatos: React.FC = () => {
 
-    const [nombre_contacto, setNombre] = useState(sessionStorage.getItem('nombre'));
-    const [correo_contacto, setCorreo] = useState(sessionStorage.getItem('correo'));
-    const [telefono_contacto, setTel] = useState(sessionStorage.getItem('cel'));
-    const [direccion, setDireccion] = useState(sessionStorage.getItem('direccion'));
-    const [rfc, setRFC] = useState(sessionStorage.getItem('rfc'));
+    const [nombre_contacto, setNombre] = useState(localStorage.getItem('nombre'));
+    const [correo_contacto, setCorreo] = useState(localStorage.getItem('correo'));
+    const [telefono_contacto, setTel] = useState(localStorage.getItem('cel'));
+    const [direccion, setDireccion] = useState(localStorage.getItem('direccion'));
+    const [rfc, setRFC] = useState(localStorage.getItem('rfc'));
     const handleNombreChange = (e: any) => { setNombre(e.target.value); }
     const handleCorreoChange = (e: any) => { setCorreo(e.target.value); }
     const handleTelChange = (e: any) => { setTel(e.target.value); }
@@ -52,7 +52,7 @@ const Misdatos: React.FC = () => {
 
     const eliminarParasiempre = async () => {
 
-        const correo = sessionStorage.getItem('correo');
+        const correo = localStorage.getItem('correo');
         const url = `https://ventasletrimex.com.mx/letrimex_v2/public/borrarapp/${correo}`;
 
         const req = await fetch(url);
@@ -66,12 +66,12 @@ const Misdatos: React.FC = () => {
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
             }).then(function () {
-                sessionStorage.setItem('sesion', 'false');
-                sessionStorage.setItem('nombre', null);
-                sessionStorage.setItem('correo', null);
-                sessionStorage.setItem('cel', null);
-                sessionStorage.setItem('rfc', null);
-                sessionStorage.setItem('direccion', null);
+                localStorage.setItem('sesion', 'false');
+                localStorage.setItem('nombre', null);
+                localStorage.setItem('correo', null);
+                localStorage.setItem('cel', null);
+                localStorage.setItem('rfc', null);
+                localStorage.setItem('direccion', null);
                 window.location.href = '/tab2';
             });
             return
@@ -103,10 +103,10 @@ const Misdatos: React.FC = () => {
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
             }).then(function () {
-                sessionStorage.setItem('correo', correo_contacto);
-                sessionStorage.setItem('cel', telefono_contacto);
-                sessionStorage.setItem('rfc', rfc);
-                sessionStorage.setItem('direccion', direccion);
+                localStorage.setItem('correo', correo_contacto);
+                localStorage.setItem('cel', telefono_contacto);
+                localStorage.setItem('rfc', rfc);
+                localStorage.setItem('direccion', direccion);
                 window.location.reload();;
             });
             return

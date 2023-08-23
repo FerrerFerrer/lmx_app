@@ -40,7 +40,7 @@ const CalculadoraEvento: React.FC = () => {
 
         }).then(function (inputValue) {
             if (inputValue.isConfirmed === true) {
-                sessionStorage.setItem('1', (Math.ceil(baños)).toString());
+                localStorage.setItem('1', (Math.ceil(baños)).toString());
                 window.location.href = '/Tab3';
             } else {
                 return;

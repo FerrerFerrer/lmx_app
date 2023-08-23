@@ -82,10 +82,6 @@ const Tab1: React.FC = () => {
     get3()
   }, [])
 
-
-  localStorage.clear();
-  console.log("borrado");
-
   let session = false;
   let banner;
   if (session) {
@@ -103,9 +99,10 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <IonHeader>
-            <TopBar />
+          <TopBar />
         </IonHeader>
         <div className='ion-text-center'>
+          {/* <p id='texto-suscribete'>VERSION DE PRUEBA */}
           <p id='texto-suscribete'>¡Suscríbete a nuestro Newsletter!</p>
           {banner}
         </div>

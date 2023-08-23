@@ -9,7 +9,7 @@ const FormularioCotizar: React.FC = () => {
 
     let arreglo = [];
 
-    for (const [key, value] of Object.entries(sessionStorage)) {
+    for (const [key, value] of Object.entries(localStorage)) {
         if (!(isNaN(parseInt(key)))) {
             arreglo.push({ id: key, cantidad: value })
 
@@ -36,53 +36,53 @@ const FormularioCotizar: React.FC = () => {
         categ = 'Servicio';
     }
 
-    ((sessionStorage.getItem('1') !== '0') && (sessionStorage.getItem('1') !== null)) ? equipo += "Baño Azul, " : equipo += "";
-    ((sessionStorage.getItem('2') !== '0') && (sessionStorage.getItem('2') !== null)) ? equipo += "Baño Rosa, " : equipo += "";
-    ((sessionStorage.getItem('3') !== '0') && (sessionStorage.getItem('3') !== null)) ? equipo += "Baño Azul Lujo, " : equipo += "";
-    ((sessionStorage.getItem('4') !== '0') && (sessionStorage.getItem('4') !== null)) ? equipo += "Baño Rosa Lujo, " : equipo += "";
-    ((sessionStorage.getItem('5') !== '0') && (sessionStorage.getItem('5') !== null)) ? equipo += "Baño Capacidades, " : equipo += "";
-    ((sessionStorage.getItem('6') !== '0') && (sessionStorage.getItem('6') !== null)) ? equipo += "Baño Colores, " : equipo += "";
-    ((sessionStorage.getItem('7') !== '0') && (sessionStorage.getItem('7') !== null)) ? equipo += "Lavamanos, " : equipo += "";
-    ((sessionStorage.getItem('8') !== '0') && (sessionStorage.getItem('8') !== null)) ? equipo += "" : equipo += "";
-    ((sessionStorage.getItem('9') !== '0') && (sessionStorage.getItem('9') !== null)) ? equipo += "Baños Mixtos, " : equipo += "";
-    ((sessionStorage.getItem('10') !== '0') && (sessionStorage.getItem('10') !== null)) ? equipo += "Black Elite, " : equipo += "";
-    ((sessionStorage.getItem('11') !== '0') && (sessionStorage.getItem('11') !== null)) ? equipo += "Luxuria, " : equipo += "";
+    ((localStorage.getItem('1') !== '0') && (localStorage.getItem('1') !== null)) ? equipo += "Baño Azul, " : equipo += "";
+    ((localStorage.getItem('2') !== '0') && (localStorage.getItem('2') !== null)) ? equipo += "Baño Rosa, " : equipo += "";
+    ((localStorage.getItem('3') !== '0') && (localStorage.getItem('3') !== null)) ? equipo += "Baño Azul Lujo, " : equipo += "";
+    ((localStorage.getItem('4') !== '0') && (localStorage.getItem('4') !== null)) ? equipo += "Baño Rosa Lujo, " : equipo += "";
+    ((localStorage.getItem('5') !== '0') && (localStorage.getItem('5') !== null)) ? equipo += "Baño Capacidades, " : equipo += "";
+    ((localStorage.getItem('6') !== '0') && (localStorage.getItem('6') !== null)) ? equipo += "Baño Colores, " : equipo += "";
+    ((localStorage.getItem('7') !== '0') && (localStorage.getItem('7') !== null)) ? equipo += "Lavamanos, " : equipo += "";
+    ((localStorage.getItem('8') !== '0') && (localStorage.getItem('8') !== null)) ? equipo += "" : equipo += "";
+    ((localStorage.getItem('9') !== '0') && (localStorage.getItem('9') !== null)) ? equipo += "Baños Mixtos, " : equipo += "";
+    ((localStorage.getItem('10') !== '0') && (localStorage.getItem('10') !== null)) ? equipo += "Black Elite, " : equipo += "";
+    ((localStorage.getItem('11') !== '0') && (localStorage.getItem('11') !== null)) ? equipo += "Luxuria, " : equipo += "";
 
-    ((sessionStorage.getItem('12') !== '0') && (sessionStorage.getItem('12') !== null)) ? equipo += "" : equipo += "";
-    ((sessionStorage.getItem('13') !== '0') && (sessionStorage.getItem('13') !== null)) ? equipo += "Caseta Vigilancia, " : equipo += "";
-    ((sessionStorage.getItem('14') !== '0') && (sessionStorage.getItem('14') !== null)) ? equipo += "Caseta 8x20, " : equipo += "";
-    ((sessionStorage.getItem('15') !== '0') && (sessionStorage.getItem('15') !== null)) ? equipo += "Caseta 8x24, " : equipo += "";
-    ((sessionStorage.getItem('16') !== '0') && (sessionStorage.getItem('16') !== null)) ? equipo += "Caseta 8x32, " : equipo += "";
-    ((sessionStorage.getItem('17') !== '0') && (sessionStorage.getItem('17') !== null)) ? equipo += "Caseta 8x44, " : equipo += "";
-    ((sessionStorage.getItem('18') !== '0') && (sessionStorage.getItem('18') !== null)) ? equipo += "Caseta 10x48, " : equipo += "";
-    ((sessionStorage.getItem('19') !== '0') && (sessionStorage.getItem('19') !== null)) ? equipo += "Caseta 12x60, " : equipo += "";
-    ((sessionStorage.getItem('20') !== '0') && (sessionStorage.getItem('20') !== null)) ? equipo += "Fosa Portátil, " : equipo += "";
-    ((sessionStorage.getItem('21') !== '0') && (sessionStorage.getItem('21') !== null)) ? equipo += "Contenedor 8x20, " : equipo += "";
-    ((sessionStorage.getItem('22') !== '0') && (sessionStorage.getItem('22') !== null)) ? equipo += "Baño Azul, " : equipo += "";
-    ((sessionStorage.getItem('23') !== '0') && (sessionStorage.getItem('23') !== null)) ? equipo += "Baño Rosa,, " : equipo += "";
-    ((sessionStorage.getItem('24') !== '0') && (sessionStorage.getItem('24') !== null)) ? equipo += "Baño Azul Lujo, " : equipo += "";
-    ((sessionStorage.getItem('25') !== '0') && (sessionStorage.getItem('25') !== null)) ? equipo += "Baño Rosa Lujo, " : equipo += "";
-    ((sessionStorage.getItem('26') !== '0') && (sessionStorage.getItem('26') !== null)) ? equipo += "Capacidades Dif, " : equipo += "";
-    ((sessionStorage.getItem('27') !== '0') && (sessionStorage.getItem('27') !== null)) ? equipo += "Baño Colores, " : equipo += "";
-    ((sessionStorage.getItem('28') !== '0') && (sessionStorage.getItem('28') !== null)) ? equipo += "Lavamanos, " : equipo += "";
-    ((sessionStorage.getItem('29') !== '0') && (sessionStorage.getItem('29') !== null)) ? equipo += "" : equipo += "";
-    ((sessionStorage.getItem('30') !== '0') && (sessionStorage.getItem('30') !== null)) ? equipo += "Baños Mixtos, " : equipo += "";
-    ((sessionStorage.getItem('31') !== '0') && (sessionStorage.getItem('31') !== null)) ? equipo += "" : equipo += "";
-    ((sessionStorage.getItem('32') !== '0') && (sessionStorage.getItem('32') !== null)) ? equipo += "" : equipo += "";
-    ((sessionStorage.getItem('33') !== '0') && (sessionStorage.getItem('33') !== null)) ? equipo += "Port a Cool, " : equipo += "";
+    ((localStorage.getItem('12') !== '0') && (localStorage.getItem('12') !== null)) ? equipo += "" : equipo += "";
+    ((localStorage.getItem('13') !== '0') && (localStorage.getItem('13') !== null)) ? equipo += "Caseta Vigilancia, " : equipo += "";
+    ((localStorage.getItem('14') !== '0') && (localStorage.getItem('14') !== null)) ? equipo += "Caseta 8x20, " : equipo += "";
+    ((localStorage.getItem('15') !== '0') && (localStorage.getItem('15') !== null)) ? equipo += "Caseta 8x24, " : equipo += "";
+    ((localStorage.getItem('16') !== '0') && (localStorage.getItem('16') !== null)) ? equipo += "Caseta 8x32, " : equipo += "";
+    ((localStorage.getItem('17') !== '0') && (localStorage.getItem('17') !== null)) ? equipo += "Caseta 8x44, " : equipo += "";
+    ((localStorage.getItem('18') !== '0') && (localStorage.getItem('18') !== null)) ? equipo += "Caseta 10x48, " : equipo += "";
+    ((localStorage.getItem('19') !== '0') && (localStorage.getItem('19') !== null)) ? equipo += "Caseta 12x60, " : equipo += "";
+    ((localStorage.getItem('20') !== '0') && (localStorage.getItem('20') !== null)) ? equipo += "Fosa Portátil, " : equipo += "";
+    ((localStorage.getItem('21') !== '0') && (localStorage.getItem('21') !== null)) ? equipo += "Contenedor 8x20, " : equipo += "";
+    ((localStorage.getItem('22') !== '0') && (localStorage.getItem('22') !== null)) ? equipo += "Baño Azul, " : equipo += "";
+    ((localStorage.getItem('23') !== '0') && (localStorage.getItem('23') !== null)) ? equipo += "Baño Rosa,, " : equipo += "";
+    ((localStorage.getItem('24') !== '0') && (localStorage.getItem('24') !== null)) ? equipo += "Baño Azul Lujo, " : equipo += "";
+    ((localStorage.getItem('25') !== '0') && (localStorage.getItem('25') !== null)) ? equipo += "Baño Rosa Lujo, " : equipo += "";
+    ((localStorage.getItem('26') !== '0') && (localStorage.getItem('26') !== null)) ? equipo += "Capacidades Dif, " : equipo += "";
+    ((localStorage.getItem('27') !== '0') && (localStorage.getItem('27') !== null)) ? equipo += "Baño Colores, " : equipo += "";
+    ((localStorage.getItem('28') !== '0') && (localStorage.getItem('28') !== null)) ? equipo += "Lavamanos, " : equipo += "";
+    ((localStorage.getItem('29') !== '0') && (localStorage.getItem('29') !== null)) ? equipo += "" : equipo += "";
+    ((localStorage.getItem('30') !== '0') && (localStorage.getItem('30') !== null)) ? equipo += "Baños Mixtos, " : equipo += "";
+    ((localStorage.getItem('31') !== '0') && (localStorage.getItem('31') !== null)) ? equipo += "" : equipo += "";
+    ((localStorage.getItem('32') !== '0') && (localStorage.getItem('32') !== null)) ? equipo += "" : equipo += "";
+    ((localStorage.getItem('33') !== '0') && (localStorage.getItem('33') !== null)) ? equipo += "Port a Cool, " : equipo += "";
 
-    ((sessionStorage.getItem('34') !== '0') && (sessionStorage.getItem('34') !== null)) ? equipo += "Desague Fosas, " : equipo += "";
-    ((sessionStorage.getItem('35') !== '0') && (sessionStorage.getItem('35') !== null)) ? equipo += "Vactor, " : equipo += "";
-    ((sessionStorage.getItem('36') !== '0') && (sessionStorage.getItem('36') !== null)) ? equipo += "Hidrojet, " : equipo += "";
-    ((sessionStorage.getItem('37') !== '0') && (sessionStorage.getItem('37') !== null)) ? equipo += "Inspección de Tubería, " : equipo += "";
+    ((localStorage.getItem('34') !== '0') && (localStorage.getItem('34') !== null)) ? equipo += "Desague Fosas, " : equipo += "";
+    ((localStorage.getItem('35') !== '0') && (localStorage.getItem('35') !== null)) ? equipo += "Vactor, " : equipo += "";
+    ((localStorage.getItem('36') !== '0') && (localStorage.getItem('36') !== null)) ? equipo += "Hidrojet, " : equipo += "";
+    ((localStorage.getItem('37') !== '0') && (localStorage.getItem('37') !== null)) ? equipo += "Inspección de Tubería, " : equipo += "";
 
 
     const num_usuarios = 0;
     const nota = 'Solicitado desde la App'
     const comentario = 'Solicitado desde la App'
-    const [nombre_contacto, setNombre] = useState(sessionStorage.getItem('nombre'));
-    const [correo_contacto, setCorreo] = useState(sessionStorage.getItem('correo'));
-    const [telefono_contacto, setTel] = useState(sessionStorage.getItem('cel'));
+    const [nombre_contacto, setNombre] = useState(localStorage.getItem('nombre'));
+    const [correo_contacto, setCorreo] = useState(localStorage.getItem('correo'));
+    const [telefono_contacto, setTel] = useState(localStorage.getItem('cel'));
     const [zona, setZona] = useState('');
     const [direccion, setDireccion] = useState('');
     const [fecha_servicio, setFecha] = useState('');
@@ -114,7 +114,7 @@ const FormularioCotizar: React.FC = () => {
             }).then(function () {
 
                 for (let index = 0; index <= 40; index++) {
-                    sessionStorage.removeItem(index.toString());
+                    localStorage.removeItem(index.toString());
 
                 }
 
@@ -139,7 +139,7 @@ const FormularioCotizar: React.FC = () => {
         return true;
     }
 
-    if (sessionStorage.getItem('sesion') !== 'true') {
+    if (localStorage.getItem('sesion') !== 'true') {
         var Swal = require('sweetalert2');
 
         Swal.fire({

@@ -83,7 +83,7 @@ const Pedidos: React.FC = () => {
 }
 
 const getdata = async () => {
-    let name = sessionStorage.getItem('nombre');
+    let name = localStorage.getItem('nombre');
     const url = `https://ventasletrimex.com.mx/letrimex_v2/public/obtenerSolicitud/${name}`;
     console.log(url);
 
