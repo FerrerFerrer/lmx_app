@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "629724037124",
+    "project_id": "letrimex-app",
+    "storage_bucket": "letrimex-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629724037124:android:feaa49e6486ef931bab551",
+        "android_client_info": {
+          "package_name": "app.evo.Letrimex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629724037124-ptmo3p15q4d1aau447p9n3pkd5ajiur9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0pyahoAce5St2XO-n39Kb4oqyFfiKyhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629724037124-ptmo3p15q4d1aau447p9n3pkd5ajiur9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

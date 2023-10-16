@@ -1,6 +1,8 @@
 import { IonCol, IonContent, IonHeader, IonPage, IonRow, IonToolbar } from '@ionic/react';
 import './Tab1.css';
 import TextCarousel from '../components/textCarousel';
+import { PushNotifications } from '@capacitor/push-notifications';
+
 
 // imagenes
 import banner_perfil from '../img/banner_perfil.png'
@@ -208,17 +210,43 @@ const Tab1: React.FC = () => {
   );
 };
 
+const addListeners = async () => {
+  await PushNotifications.addListener('registration', token => {
+    console.info('Registration token: ', token.value);
+  });
 
-const getlinks1231 = async () => {
-  let url = `https://ventasletrimex.com.mx/letrimex_v2/public/getBanner`;
-  const req = await fetch(url);
+  await PushNotifications.addListener('registrationError', err => {
+    console.error('Registration error: ', err.error);
+  });
 
-  if (req.ok) {
-    const data = await req.json();
-    return data
+  await PushNotifications.addListener('pushNotificationReceived', notification => {
+    console.log('Push notification received: ', notification);
+  });
+
+  await PushNotifications.addListener('pushNotificationActionPerformed', notification => {
+    console.log('Push notification action performed', notification.actionId, notification.inputValue);
+  });
+}
+
+const registerNotifications = async () => {
+  let permStatus = await PushNotifications.checkPermissions();
+
+  if (permStatus.receive === 'prompt') {
+    permStatus = await PushNotifications.requestPermissions();
   }
 
-  return 'nada'
+  if (permStatus.receive !== 'granted') {
+    throw new Error('User denied permissions!');
+  }
+
+  await PushNotifications.register();
 }
+
+const getDeliveredNotifications = async () => {
+  const notificationList = await PushNotifications.getDeliveredNotifications();
+  console.log('delivered notifications', notificationList);
+}
+
+
 
 export default Tab1;
